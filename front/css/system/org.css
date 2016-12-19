@@ -1,0 +1,26 @@
+
+
+.error_system{
+	color:#f00;
+	font-size: 11px !important;
+	font-weight: 600 !important;
+}
+
+
+.hides{
+	display: none;
+}
+
+.clear{
+	clear: both;
+}
+
+.red_c{
+	color: #f00 !important;
+
+}
+
+.green_c{
+	color: #1DBA0F !important;
+	
+}
