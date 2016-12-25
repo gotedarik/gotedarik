@@ -2,7 +2,7 @@
 
 class MoProducts extends MongoDBa
 {
-	private static $dbname="organizetedarik";
+	private static $dbname="gotedarik";
 
 	private static $tablename="products";
 
