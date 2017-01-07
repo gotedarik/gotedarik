@@ -383,7 +383,6 @@ img.alignright{
 }
 .block .block-head .block-title-text {
   font-size: 24px;
-  text-transform: uppercase;
   line-height: 20px;
 }
 .block .block-head .block-title-text.text-lg{
@@ -425,11 +424,11 @@ img.alignright{
   display: inline-block;
   padding: 0;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   border-top: 5px solid #fd7400;
   line-height: 43px;
-  text-transform: uppercase;
+  
   padding: 0 20px;
   border-top-left-radius: 5px;
   float: left;
@@ -485,7 +484,6 @@ img.alignright{
 .block3 .block-head .nav-tab.tab-category li>a{
   padding: 18px 22px;
   font-size: 18px;
-  text-transform: uppercase;
 }
 .block3 .block-head .nav-tab.tab-category li>a:focus{
   color: #333;
@@ -616,7 +614,6 @@ img.alignright{
   text-align: center;
   font-size: 10px;
   line-height: 16px;
-  text-transform: uppercase;
   font-weight: 600;
 }
 .products .product-status .new{
@@ -690,26 +687,6 @@ img.alignright{
   transition: all 0.3s ease-out 0s;
   z-index: 2;
   overflow: hidden;
-}
-.products .product-container:hover .product-right{
- bottom: 0;
-}
-.products .product-container:hover .product-thumb .product-img:before{
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-
-.products .product-container:hover .btn-quick-view{
-  opacity: 1;
 }
 
 .products .product-price-old{

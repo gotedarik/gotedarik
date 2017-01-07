@@ -729,333 +729,69 @@
 				</div>
 				<!-- ./tags -->
 			</div>
+
 			<div class="col-sm-8 col-md-9">
 				<!-- new-arrivals -->
 				<div class="block3 block-new-arrivals">
 					<div class="block-head">
-						<h3 class="block-title">new arrivals</h3>
-						<ul class="nav-tab default">
-							<li class="active"><a data-toggle="tab" href="#tab-1">Clothing</a></li>
-							<li><a data-toggle="tab" href="#tab-2">Smart phone </a></li>
-							<li><a data-toggle="tab" href="#tab-3">Jewelry</a></li>
-						</ul>
+						<h3 class="block-title">Fırsat Ürünleri</h3>
+						
 					</div>
 					<div class="block-inner">
 						<div class="tab-container">
 							<div id="tab-1" class="tab-panel active">
 								<ul class="products kt-owl-carousel" data-margin="20" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":3},"768":{"items":2},"1000":{"items":3},"1200":{"items":4}}'>
+
+								<?php foreach($modelOpportunityproducts as $key=>$value):?>
+
 									<li class="product">
 										<div class="product-container">
 											<div class="product-left">
 												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p13.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
+													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
+													
 												</div>
 											</div>
 											<div class="product-right">
 												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
+													<a href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><?=$value->name?></a>
 												</div>
 												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
+													<span class="product-price"><?= number_format($value->price,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
+													<span class="product-price-old"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
 												</div>
 												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
+													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin" href="javascrpt:;">Listene Ekle</a>
+													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" href="javascript:;" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+
 												</div>
 											</div>
 										</div>
 									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p14.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p15.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p16.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
+								<?php endforeach?>
+									
 								</ul>
 							</div>
-							<div id="tab-2" class="tab-panel">
-								<ul class="products kt-owl-carousel" data-margin="20" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":3},"768":{"items":2},"1000":{"items":3},"1200":{"items":4}}'>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p17.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p18.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p19.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p20.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div id="tab-3" class="tab-panel">
-								<ul class="products kt-owl-carousel" data-margin="20" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":3},"768":{"items":2},"1000":{"items":3},"1200":{"items":4}}'>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p21.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p22.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p23.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="product">
-										<div class="product-container">
-											<div class="product-left">
-												<div class="product-thumb">
-													<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p24.jpg" alt="Product"></a>
-													<a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
-												</div>
-											</div>
-											<div class="product-right">
-												<div class="product-name">
-													<a href="#">Cotton Lycra Leggings</a>
-												</div>
-												<div class="price-box">
-													<span class="product-price">$139.98</span>
-													<span class="product-price-old">$169.00</span>
-												</div>
-												<div class="product-button">
-													<a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
-													<a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
-													<a class="button-radius btn-add-cart" title="Add to Cart" href="#">Buy<span class="icon"></span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
+							
 						</div>
 					</div>
+
+					<!--
 					<div class="block-footer">
 						<div class="text-center banner-hover">
 							<a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/adv-avantage.png" alt="Banner"></a>
 						</div>
 					</div>
+					-->
 				</div>
 				<!-- new-arrivals -->
 				<!-- Hot deals -->
+
+
+
 				<div class="block3 block-hotdeals">
 					<div class="block-head">
-						<h3 class="block-title">Hot deals</h3>
-						<a class="link-all" href="#">View All</a>
+						<h3 class="block-title">İhaleler</h3>
 					</div>
 					<div class="block-inner">
 						<ul class="products kt-owl-carousel" data-margin="20" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":3},"768":{"items":2},"1000":{"items":3},"1200":{"items":4}}'>
@@ -1172,6 +908,120 @@
 				</div>
 				<!-- Hot deals -->
 				<!-- group banner -->
+
+				<!-- new-arrivals -->
+				<div class="block3 block-new-arrivals">
+					<div class="block-head">
+						<h3 class="block-title">Sizin İçin Seçtiklerimiz</h3>
+						
+					</div>
+					<div class="block-inner">
+						<div class="tab-container">
+							<div id="tab-1" class="tab-panel active">
+								<ul class="products kt-owl-carousel" data-margin="20" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":3},"768":{"items":2},"1000":{"items":3},"1200":{"items":4}}'>
+
+								<?php foreach($modelChoosetoseizeproducts as $key=>$value):?>
+
+									<li class="product">
+										<div class="product-container">
+											<div class="product-left">
+												<div class="product-thumb">
+													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
+													
+												</div>
+											</div>
+											<div class="product-right">
+												<div class="product-name">
+													<a href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><?=$value->name?></a>
+												</div>
+												<div class="price-box">
+													<span class="product-price"><?= number_format($value->price,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
+													<span class="product-price-old"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
+												</div>
+												<div class="product-button">
+													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin" href="javascrpt:;">Listene Ekle</a>
+													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" href="javascript:;" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+
+												</div>
+											</div>
+										</div>
+									</li>
+								<?php endforeach?>
+									
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+
+					<!--
+					<div class="block-footer">
+						<div class="text-center banner-hover">
+							<a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/adv-avantage.png" alt="Banner"></a>
+						</div>
+					</div>
+					-->
+				</div>
+				<!-- new-arrivals -->
+				<!-- Hot deals -->
+
+
+				<!-- new-arrivals -->
+				<div class="block3 block-new-arrivals">
+					<div class="block-head">
+						<h3 class="block-title">En Son Eklenen Ürünler</h3>
+						
+					</div>
+					<div class="block-inner">
+						<div class="tab-container">
+							<div id="tab-1" class="tab-panel active">
+								<ul class="products kt-owl-carousel" data-margin="20" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":3},"768":{"items":2},"1000":{"items":3},"1200":{"items":4}}'>
+
+								<?php foreach($modelRecentlyadded  as $key=>$value):?>
+
+									<li class="product">
+										<div class="product-container">
+											<div class="product-left">
+												<div class="product-thumb">
+													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
+													
+												</div>
+											</div>
+											<div class="product-right">
+												<div class="product-name">
+													<a href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><?=$value->name?></a>
+												</div>
+												<div class="price-box">
+													<span class="product-price"><?= number_format($value->price,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
+													<span class="product-price-old"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
+												</div>
+												<div class="product-button">
+													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin" href="javascrpt:;">Listene Ekle</a>
+													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" href="javascript:;" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+
+												</div>
+											</div>
+										</div>
+									</li>
+								<?php endforeach?>
+									
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+
+					<!--
+					<div class="block-footer">
+						<div class="text-center banner-hover">
+							<a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/adv-avantage.png" alt="Banner"></a>
+						</div>
+					</div>
+					-->
+				</div>
+				<!-- new-arrivals -->
+				<!-- Hot deals -->
+
 				<div class="group-banner3 banner-hover">
 					<a class="banner banner1" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/images01.png" alt="Banner"></a>
 					<a class="banner banner2" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/images02.png" alt="Banner"></a>
