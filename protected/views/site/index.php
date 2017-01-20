@@ -761,8 +761,11 @@
 													<span class="product-price-old"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
 												</div>
 												<div class="product-button">
-													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin" href="javascrpt:;">Listene Ekle</a>
-													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" href="javascript:;" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+                                                    <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                                        <a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin">Listene Ekle</a>
+                                                        <a class="btn-add-comparre" title="Ürünleri karşılaştırın" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+                                                    <?php endif; ?>
+                                                    <a class="button-radius btn-add-cart" title="Ürünü İncele" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>">İncele<span class="icon"></span></a>
 
 												</div>
 											</div>
@@ -939,9 +942,11 @@
 													<span class="product-price-old"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
 												</div>
 												<div class="product-button">
-													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin" href="javascrpt:;">Listene Ekle</a>
-													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" href="javascript:;" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
-
+                                                    <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                                        <a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin">Listene Ekle</a>
+                                                        <a class="btn-add-comparre" title="Ürünleri karşılaştırın" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+                                                    <?php endif; ?>
+                                                    <a class="button-radius btn-add-cart" title="Ürünü İncele" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>">İncele<span class="icon"></span></a>
 												</div>
 											</div>
 										</div>
@@ -981,6 +986,7 @@
 
 									<li class="product">
 										<div class="product-container">
+                                            indirim
 											<div class="product-left">
 												<div class="product-thumb">
 													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
@@ -996,9 +1002,11 @@
 													<span class="product-price-old"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
 												</div>
 												<div class="product-button">
-													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin" href="javascrpt:;">Listene Ekle</a>
-													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" href="javascript:;" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
-
+                                                    <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+													<a class="btn-add-wishlist" onclick="addfollowlist(<?=$value->code?>)" title="Ürünü takip listesine ekleyin">Listene Ekle</a>
+													<a class="btn-add-comparre" title="Ürünleri karşılaştırın" onclick="addcomparelist(<?=$value->code?>)">Karşılaştır</a>
+                                                    <?php endif; ?>
+                                                    <a class="button-radius btn-add-cart" title="Ürünü İncele" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>">İncele<span class="icon"></span></a>
 												</div>
 											</div>
 										</div>

@@ -121,211 +121,49 @@
                 <h1 class="page-title">Takip Listem</h1>
                 <div class="page-content">
                 </div>
-                <div class="box-border">
-                    <h4>Yeni bir ürünü takip et</h4>
-                    <p>
-                        <label>Ürün adı</label>
-                        <input type="text">
-                    </p>
-                    <p>
-                        <button class="button">Takip et</button>
-                    </p>
-                </div>
+
                 <table class="table table-bordered table-wishlist">
                     <thead>
                     <tr>
                         <th>Ürün Adı</th>
-                        <th>Adet</th>
-                        <th>Takip Tarihi</th>
+                        <th>Ürün Fiyatı</th>
                         <th>Sil</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>My wishlist</td>
-                        <td>7</td>
-                        <td>2015-06-18</td>
-                        <td class="text-center"><a href="#"><i class="fa fa-close"></i></a></td>
-                    </tr>
+                    <tbody id="allbasket">
+                    <?php
+
+
+                    if(Func::followcount() == 0){
+                        echo "<tr><td style='text-align: center;' colspan='4'>Takip Listeniz Boş</td></tr>";
+                    }
+
+                    ?>
+                        <?php foreach ($model as $key => $value) : ?>
+                            <tr id="<?=$value->code?>">
+                                <td><a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value->code,$value->product_name)))?>"><?=$value->product_name?></a></td>
+                                <td><span class="amount"><?=number_format($value->product_price,2)?>&nbsp;<?=Params::getParams_("currency",$value->currency)?></span></td>
+                                <td style="cursor: pointer;" class="text-center"><a onclick="deletefollowitem(<?=$value->code?>)"><i class="fa fa-close"></i></a></td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
                 <ul class="row list-wishlist">
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist1.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist2.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist3.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist4.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist5.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist6.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist7.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
-                    <li class="col-sm-6 col-md-3">
-                        <div class="product-img">
-                            <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/wishlist8.jpg" alt="Product"></a>
-                        </div>
-                        <h5 class="product-name">
-                            <a href="#">Cotton Lycra Leggings</a>
-                        </h5>
-                        <div class="qty">
-                            <label>Quantity</label>
-                            <input type="text">
-                        </div>
-                        <div class="priority">
-                            <label>Priority</label>
-                            <select>
-                                <option>Medium</option>
-                            </select>
-                        </div>
-                        <div class="button-action">
-                            <button class="button button-sm">Save</button>
-                            <a href="#"><i class="fa fa-close"></i></a>
-                        </div>
-                    </li>
+                    <?php foreach ($model as $key => $value) : ?>
+                        <li id="<?=$value->code?>_li" class="col-sm-6 col-md-3">
+                            <div class="product-img">
+                                <a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value->code,$value->product_name)))?>"><img src="<?=$value->product_imageS?>" alt="<?=$value->product_name?>"></a>
+                            </div>
+                            <h5 class="product-name">
+                                <a href="#"><?=$value->product_name?></a>
+                            </h5>
+
+                            <div class="button-action">
+                                <button onclick="window.location.href = '<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value->code,$value->product_name)))?>'" class="button button-sm">İncele</button>
+                                <a style="cursor: pointer" onclick="deletefollowitem(<?=$value->code?>)"><i class="fa fa-close"></i></a>
+                            </div>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>

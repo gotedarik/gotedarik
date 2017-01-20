@@ -536,18 +536,43 @@ function clearOfferbasket() {
 		url: params.site+"/urun/clearofferbasket",
 		success: function (data) {
 			if(data.status == 1){
-				$(".cart_item").remove();
-				$(".mini_cart_item").remove();
-				$(".cart-items-count").html("0");
-				$("#msgbasket").html("Sepetiniz Boş");
+				$("#allbasket").html(" ");
+				$("#b_ul").html(" ");
+                $("#bcount").html("0");
 				$("#allbasket").prepend("<tr><td style='text-align: center;' colspan='6'>Sepetiniz Boş</td></tr>");
-				$(".wc-proceed-to-checkout").remove();
 			}
 		}
 	})
 
 }
 
+function deleteofferitem(id) {
+    var data = {
+        code:id
+    };
+
+    var dataString = 'data='+encodeURIComponent(JSON.stringify(data));
+
+    $.ajax({
+        type: 'POST',
+        dataType: 'json',
+        url: params.site+"/urun/deleteofferitem",
+        data: dataString,
+        success: function (data) {
+            if(data.status == 1){
+                $("#"+data.code+"").remove();
+                $("."+data.code+"").remove();
+
+                if(data.count == 0){
+                    $("#bcount").html(data.count);
+                    $("#allbasket").prepend("<tr><td style='text-align: center;' colspan='5'>Sepetiniz Boş</td></tr>");
+                }else if(data.count > 0){
+                    $("#bcount").html(data.count);
+                }
+            }
+        }
+    })
+}
 function deletefollowitem(id) {
 	var data = {
 		code:id
@@ -564,6 +589,7 @@ function deletefollowitem(id) {
 
 			if(data.status == 1){
 				$("#"+data.code+"").remove();
+				$("#"+data.code+"_li").remove();
 				var datacount = data.count;
 				if(datacount > 0){
 					$(".countfollow").html(datacount);
@@ -576,34 +602,6 @@ function deletefollowitem(id) {
 	})
 }
 
-function deleteofferitem(id) {
-	var data = {
-		code:id
-	};
-
-	var dataString = 'data='+encodeURIComponent(JSON.stringify(data));
-
-	$.ajax({
-		type: 'POST',
-		dataType: 'json',
-		url: params.site+"/urun/deleteofferitem",
-		data: dataString,
-		success: function (data) {
-			if(data.status == 1){
-				$("#"+data.code+"").remove();
-				$("#"+data.code+"_1"+"").remove();
-				if(data.count == 0){
-					$(".count_basket").html("0");
-					$("#msgbasket").html("Sepetiniz Boş");
-					$(".wc-proceed-to-checkout").remove();
-					$("#allbasket").prepend("<tr><td style='text-align: center;' colspan='5'>Sepetiniz Boş</td></tr>");
-				}else if(data.count > 0){
-					$(".count_basket").html(data.count);
-				}
-			}
-		}
-	})
-}
 
 function deletecompareitem(id){
 	var data = {
@@ -619,14 +617,7 @@ function deletecompareitem(id){
 		data: dataString,
 		success: function (data) {
 			if(data.status == 1){
-				$("#"+data.code+"").remove();
-				var datacount = data.count;
-				if(datacount > 0){
-					$(".countcompare").html(datacount);
-				}else if(datacount == 0){
-					$(".countcompare").html("0");
-					$("#allbasketcomp").prepend("<tr><td style='text-align: center;' colspan='6'>Karşılaştırma listenizde ürün bulunmamaktadır</td></tr>");
-				}
+				$("."+data.code+"_li").remove();
 			}
 		}
 	});

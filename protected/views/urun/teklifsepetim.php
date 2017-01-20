@@ -16,61 +16,63 @@
                     <table class="table table-bordered table-responsive cart_summary">
                         <thead>
                         <tr>
-                            <th class="cart_product">Product</th>
-                            <th>Description</th>
-                            <th>Unit price</th>
-                            <th>Qty</th>
-                            <th>Total</th>
+                            <th class="cart_product">Ürün Resmi</th>
+                            <th>Ürün Adı</th>
+                            <th>Birim Fiyatı</th>
+                            <th>Adet</th>
                             <th class="action"><i class="fa fa-trash-o"></i></th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td class="cart_product">
-                                <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/p1.jpg" alt="Product"></a>
-                            </td>
-                            <td class="cart_description">
-                                <p class="product-name"><a href="#">Frederique Constant </a></p>
-                                <small class="cart_ref">Ürün Kodu : #123654999</small><br>
-                            </td>
-                            <td class="price"><span>61,19 €</span></td>
-                            <td class="qty">
-                                <input class="form-control input-sm" type="text" value="1">
-                                <a href="#"><i class="fa fa-caret-up"></i></a>
-                                <a href="#"><i class="fa fa-caret-down"></i></a>
-                            </td>
-                            <td class="price">
-                                <span>61,19 €</span>
-                            </td>
-                            <td class="action">
-                                <a href="#">Delete item</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cart_product">
-                                <a href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/p2.jpg" alt="Product"></a>
-                            </td>
-                            <td class="cart_description">
-                                <p class="product-name"><a href="#">Frederique Constant </a></p>
-                                <small class="cart_ref">Ürün Kodu : #123654999</small><br>
-                            </td>
-                            <td class="price"><span>61,19 €</span></td>
-                            <td class="qty">
-                                <input class="form-control input-sm" type="text" value="1">
-                                <a href="#"><i class="fa fa-caret-up"></i></a>
-                                <a href="#"><i class="fa fa-caret-down"></i></a>
-                            </td>
-                            <td class="price">
-                                <span>61,19 €</span>
-                            </td>
-                            <td class="action">
-                                <a href="#">Delete item</a>
-                            </td>
-                        </tr>
+                        <tbody id="allbasket">
+                        <?php
+
+                        !empty(Yii::app()->user->getState("user_id"))?$say=count(Func::offerbasket()):$say=count(CookieBasket::getAll());
+
+                        if($say == 0)
+                            echo "<tr><td style='text-align: center;' colspan='5'>Sepetiniz Boş</td></tr>";
+
+                        ?>
+
+                        <?php
+                        if(!empty(Yii::app()->user->getState("user_id"))) {
+                            foreach ($model as $key => $value) : ?>
+
+                                <tr id="<?=$value->code;?>">
+                                    <td class="cart_product">
+                                        <a href="<?= Yii::app()->createUrl("urun/view", array("id" => Func::buildId($value->code, $value->product_name))) ?>" target="_blank"><img src="<?= $value->product_imageS ?>" alt="<?=$value->product_name?>"></a>
+                                    </td>
+                                    <td class="cart_description">
+                                        <p class="product-name"><a href="<?= Yii::app()->createUrl("urun/view", array("id" => Func::buildId($value->code, $value->product_name))) ?>" target="_blank"><?= $value->product_name ?> </a></p>
+                                        <small class="cart_ref">Ürün Kodu : <?=$value->code?></small><br>
+                                    </td>
+                                    <td class="price"><span><?= number_format($value->product_price, 2) ?>
+                                            &nbsp;<?= Params::getParams_("currency", $value->currency) ?></span></td>
+                                    <td class="qty">
+                                        <input id="t_count<?= $value->code; ?>" onchange="changepiece(<?= $value->code; ?>)" class="form-control input-sm" type="text" value="<?= $value->count_number ?>">
+                                        <a style="cursor: pointer" onclick="plus(<?= $value->code; ?>);"><i class="fa fa-caret-up plus"></i></a>
+                                        <a style="cursor: pointer" onclick="mins(<?= $value->code ?>);"><i class="fa fa-caret-down minus"></i></a>
+                                    </td>
+                                    <td class="action">
+                                        <a style="cursor: pointer;" onclick="deleteofferitem(<?= $value->code ?>)">Delete item</a>
+                                    </td>
+                                </tr>
+
+
+
+                            <?php endforeach; } ?>
                         </tbody>
 
                     </table>
-                    <button class="button pull-right">Teklifleri gönder</button>
+                    <div class="alt_btns">
+                        <div class="col-md-6">
+                            <a onclick="clearOfferbasket();" style="background: red;color: white" class="button pull-left"><i class="fa fa-trash">&nbsp;&nbsp;</i>Tümünü Temizle</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="button pull-right">Teklifleri gönder</a>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>

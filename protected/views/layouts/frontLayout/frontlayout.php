@@ -1,3 +1,13 @@
+<?php
+$func = new Func;
+if (!empty(Yii::app()->user->getState("user_id"))){
+    $products_basket = $func->offerbasket();
+    $say = count($products_basket);
+}else{
+    $cookie = CookieBasket::getAll();
+    $say = count($cookie);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/lib/owl.carousel/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/lib/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/lib/easyzoom/easyzoom.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/global.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/style.css" />
@@ -139,9 +150,11 @@
                                         <?php if (!empty(Yii::app()->user->getState("user_id"))):?>
                                             <li><a href="<?=Yii::app()->createUrl("member/uaccount");?>"><i class="fa fa-user"></i> Hesabım</a></li>
                                         <?php endif; ?>
-                                        <li><a href="<?=Yii::app()->createUrl("urun/takiplistesi")?>"><i class="fa fa-heart-o"></i> Takip Listem</a></li>
-                                        <li><a href="<?=Yii::app()->createUrl("urun/urunkarsilastir")?>""><i class="fa fa-exchange"></i> Karşılaştırma Listem</a></li>
-                                        <li><a href="<?=Yii::app()->createUrl("urun/teklifsepetim")?>""><i class="fa fa-arrow-circle-right"></i> Sepetim</a></li>
+                                        <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                            <li><a href="<?=Yii::app()->createUrl("urun/takiplistesi")?>"><i class="fa fa-heart-o"></i> Takip Listem</a></li>
+                                            <li><a href="<?=Yii::app()->createUrl("urun/urunkarsilastir")?>""><i class="fa fa-exchange"></i> Karşılaştırma Listem</a></li>
+                                            <li><a href="<?=Yii::app()->createUrl("urun/teklifsepetim")?>""><i class="fa fa-arrow-circle-right"></i> Sepetim</a></li>
+                                        <?php endif; ?>
                                     </ul>
                                 </div>
                                 <div class="dropdown language">
@@ -162,6 +175,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 cart-mobile">
+                        <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
                         <div class="block-wrap-cart">
                             <div class="iner-block-cart box-radius">
                                 <a href="#">
@@ -170,47 +184,64 @@
                             </div>
                             <div class="block-mini-cart">
                                 <div class="mini-cart-content">
-                                    <h5 class="mini-cart-head">2 Items in my cart</h5>
+                                    <h5 class="mini-cart-head">Sepetinizde <?=$say;?> ürün var</h5>
                                     <div class="mini-cart-list">
                                         <ul>
-                                            <li class="product-info">
-                                                <div class="p-left">
-                                                    <a href="#" class="remove_link"></a>
-                                                    <a href="#">
-                                                        <img class="img-responsive" src="<?=Yii::app()->request->baseUrl;?>/front/data/p1.jpg" alt="Product">
-                                                    </a>
-                                                </div>
-                                                <div class="p-right">
-                                                    <p class="p-name">Donec Ac Tempus</p>
-                                                    <p class="product-price">$139.98</p>
-                                                    <p>Qty: 1</p>
-                                                </div>
-                                            </li>
-                                            <li class="product-info">
-                                                <div class="p-left">
-                                                    <a href="#" class="remove_link"></a>
-                                                    <a href="#">
-                                                        <img class="img-responsive" src="<?=Yii::app()->request->baseUrl;?>/front/data/p2.jpg" alt="Product">
-                                                    </a>
-                                                </div>
-                                                <div class="p-right">
-                                                    <p class="p-name">Donec Ac Tempus</p>
-                                                    <p class="product-price">$139.98</p>
-                                                    <p>Qty: 1</p>
-                                                </div>
-                                            </li>
+                                            <?php
+
+                                            if($say != 0) {
+                                                if(!empty(Yii::app()->user->getState("user_id"))){
+                                                    foreach ($products_basket as $key => $value) :
+                                                        ?>
+                                                        <li class="product-info <?=$value->code;?>">
+                                                            <div class="p-left">
+                                                                <a onclick="deleteofferitem(<?=$value->code;?>)" title="Ürünü kaldır" class="remove_link"></a>
+                                                                <a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value->code,$value->product_name)))?>">
+                                                                    <img class="img-responsive" src="<?=$value->product_imageS?>" alt="Product">
+                                                                </a>
+                                                            </div>
+                                                            <div class="p-right">
+                                                                <p class="p-name"><?=$value->product_name?></p>
+                                                                <p class="product-price">$139.98</p>
+                                                                <p>Qty: <span class="countprice"><?=$value->count_number?></span> x <span class="amount"><?=number_format($value->product_price,2)?>&nbsp;<?=Params::getParams_("currency",$value->currency)?></span></p>
+                                                            </div>
+                                                        </li>
+                                                        <?php
+                                                    endforeach;
+                                                }else{
+                                                    foreach ($cookie as $key => $value) :
+                                                        ?>
+
+                                                        <li class="product-info <?=$value["code"];?>">
+                                                            <div class="p-left">
+                                                                <a onclick="deleteofferitem(<?=$value["code"];?>)" title="Ürünü kaldır" class="remove_link"></a>
+                                                                <a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value["code"],$value["name"])))?>">
+                                                                    <img class="img-responsive" src="<?=$value["img"]?>" alt="Product">
+                                                                </a>
+                                                            </div>
+                                                            <div class="p-right">
+                                                                <p class="p-name"><?=$value["name"]?></p>
+                                                                <p>Adet: <span class="countprice"><?=$value["params"]["piece"]?></span> × <span class="amount"><?=number_format($value["price"],2)?>&nbsp;<?=Params::getParams_("currency",$value["currency"])?></span></p>
+                                                            </div>
+                                                        </li>
+                                                        <?php
+                                                    endforeach;
+                                                }
+                                            }
+
+                                            ?>
+
+
                                         </ul>
                                     </div>
-                                    <div class="toal-cart">
-                                        <span>Total</span>
-                                        <span class="toal-price pull-right">$279.96</span>
-                                    </div>
+
                                     <div class="cart-buttons">
-                                        <a href="checkout.html" class="button-radius btn-check-out">Checkout<span class="icon"></span></a>
+                                        <a href="<?=Yii::app()->createUrl("urun/teklifsepetim")?>" class="button-radius btn-check-out">Sepetim'e Git<span class="icon"></span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -237,6 +268,10 @@
                                         <li><a href="blog.html">Blog</a></li>
                                     </ul>
                                     <ul class="nav navbar-nav navbar-right">
+                                        <?php if($supplierid=Yii::app()->user->getState("supplier_id")){ ?>
+                                        <li><a style="text-transform: none;" href="<?=Yii::app()->createUrl("products/create")?>">Satış Yap</a></li>
+                                        <?php }  ?>
+                                        <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
                                         <li>
                                             <div class="block-wrap-cart">
                                                 <div class="iner-block-cart">
@@ -246,48 +281,65 @@
                                                 </div>
                                                 <div class="block-mini-cart">
                                                     <div class="mini-cart-content">
-                                                        <h5 class="mini-cart-head">2 Items in my cart</h5>
+                                                        <h5 class="mini-cart-head">Sepetinizde <span id="bcount"><?=$say;?></span> ürün var</h5>
                                                         <div class="mini-cart-list">
-                                                            <ul>
-                                                                <li class="product-info">
-                                                                    <div class="p-left">
-                                                                        <a href="#" class="remove_link"></a>
-                                                                        <a href="#">
-                                                                            <img class="img-responsive" src="<?=Yii::app()->request->baseUrl;?>/front/data/p1.jpg" alt="Product">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="p-right">
-                                                                        <p class="p-name">Donec Ac Tempus</p>
-                                                                        <p class="product-price">$139.98</p>
-                                                                        <p>Qty: 1</p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="product-info">
-                                                                    <div class="p-left">
-                                                                        <a href="#" class="remove_link"></a>
-                                                                        <a href="#">
-                                                                            <img class="img-responsive" src="<?=Yii::app()->request->baseUrl;?>/front/data/p2.jpg" alt="Product">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="p-right">
-                                                                        <p class="p-name">Donec Ac Tempus</p>
-                                                                        <p class="product-price">$139.98</p>
-                                                                        <p>Qty: 1</p>
-                                                                    </div>
-                                                                </li>
+                                                            <ul id="b_ul">
+                                                                <?php
+
+                                                                if($say != 0) {
+                                                                    if(!empty(Yii::app()->user->getState("user_id"))){
+                                                                        foreach ($products_basket as $key => $value) :
+                                                                ?>
+                                                                        <li class="product-info <?=$value->code;?>">
+                                                                            <div class="p-left">
+                                                                                <a style="cursor: pointer" onclick="deleteofferitem(<?=$value->code;?>)" title="Ürünü kaldır" class="remove_link"><i class="fa fa-times"></i></a>
+                                                                                <a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value->code,$value->product_name)))?>">
+                                                                                    <img class="img-responsive" src="<?=$value->product_imageS?>" alt="Product">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="p-right">
+                                                                                <p class="p-name"><?=$value->product_name?></p>
+                                                                                <p class="product-price">$139.98</p>
+                                                                                <p>Adet: <span class="countprice"><?=$value->count_number?></span> x <span class="amount"><?=number_format($value->product_price,2)?>&nbsp;<?=Params::getParams_("currency",$value->currency)?></span></p>
+                                                                            </div>
+                                                                        </li>
+                                                                <?php
+                                                                        endforeach;
+                                                                    }else{
+                                                                        foreach ($cookie as $key => $value) :
+                                                                ?>
+
+                                                                        <li class="product-info <?=$value["code"];?>">
+                                                                            <div class="p-left">
+                                                                                <a onclick="deleteofferitem(<?=$value["code"];?>)" title="Ürünü kaldır" class="remove_link"></a>
+                                                                                <a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value["code"],$value["name"])))?>">
+                                                                                    <img class="img-responsive" src="<?=$value["img"]?>" alt="Product">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="p-right">
+                                                                                <p class="p-name"><?=$value["name"]?></p>
+                                                                                <p>Qty: <span class="countprice"><?=$value["params"]["piece"]?></span> × <span class="amount"><?=number_format($value["price"],2)?>&nbsp;<?=Params::getParams_("currency",$value["currency"])?></span></p>
+                                                                            </div>
+                                                                        </li>
+                                                                <?php
+                                                                    endforeach;
+                                                                    }
+                                                                }
+
+                                                                ?>
+
+
                                                             </ul>
                                                         </div>
-                                                        <div class="toal-cart">
-                                                            <span>Total</span>
-                                                            <span class="toal-price pull-right">$279.96</span>
-                                                        </div>
+
                                                         <div class="cart-buttons">
-                                                            <a href="checkout.html" class="button-radius btn-check-out">Checkout<span class="icon"></span></a>
+                                                            <a href="<?=Yii::app()->createUrl("urun/teklifsepetim")?>" class="button-radius btn-check-out">Sepetim'e Git<span class="icon"></span></a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
+                                        <?php endif; ?>
                                     </ul>
                                 </div><!--/.nav-collapse -->
                             </div>
@@ -512,9 +564,12 @@
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/owl.carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/easyzoom/easyzoom.js"></script>
 <!-- COUNTDOWN -->
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/countdown/jquery.plugin.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/countdown/jquery.countdown.js"></script>
 <!-- ./COUNTDOWN -->
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/js/jquery.actual.min.js"></script>
-<script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/js/script.js"></script></html>
+<script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/js/script.js"></script>
+</body>
+</html>

@@ -580,6 +580,7 @@ img.alignright{
 .product-price{
   font-weight: bold;
   color: #ffb424;
+  font-size: 24px;
 }
 .product-price-old{
   color: #999999;
@@ -725,10 +726,12 @@ img.alignright{
   font-size: 0px;
   float: left;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .products .btn-add-comparre:hover{
   background: url('../images/compare-icon.png') no-repeat right;
+  cursor: pointer;
 }
 .products .btn-add-wishlist{
   width: 19px;
@@ -737,17 +740,21 @@ img.alignright{
   font-size: 0px;
   float: left;
   margin-right: 15px;
+  cursor: pointer;
 }
 .products .btn-add-wishlist:hover{
   background: url('../images/wishlist-icon.png') no-repeat right;
+  cursor: pointer;
 }
 .products .btn-add-cart{
   margin-top: 0;
   float: left;
+  cursor: pointer;
 }
 .products .btn-add-cart:hover,
 .products .btn-add-cart:hover .icon:before{
   border-radius: 0;
+  cursor: pointer;
 }
 .products .desc{
   padding: 20px 0;
