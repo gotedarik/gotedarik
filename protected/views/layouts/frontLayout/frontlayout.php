@@ -175,7 +175,7 @@ if (!empty(Yii::app()->user->getState("user_id"))){
                         </div>
                     </div>
                     <div class="col-sm-5 cart-mobile">
-                        <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                        <?php if(empty(Yii::app()->user->getState("supplier_id"))) : ?>
                         <div class="block-wrap-cart">
                             <div class="iner-block-cart box-radius">
                                 <a href="#">
@@ -271,7 +271,7 @@ if (!empty(Yii::app()->user->getState("user_id"))){
                                         <?php if($supplierid=Yii::app()->user->getState("supplier_id")){ ?>
                                         <li><a style="text-transform: none;" href="<?=Yii::app()->createUrl("products/create")?>">Satış Yap</a></li>
                                         <?php }  ?>
-                                        <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                        <?php if(empty(Yii::app()->user->getState("supplier_id"))) : ?>
                                         <li>
                                             <div class="block-wrap-cart">
                                                 <div class="iner-block-cart">

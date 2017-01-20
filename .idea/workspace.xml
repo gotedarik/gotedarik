@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff008f3-ccf4-406a-a21a-7e31730e83d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/view.php" afterPath="$PROJECT_DIR$/protected/views/urun/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" afterPath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,11 +92,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="728">
               <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frontlayout.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="177" column="33" lean-forward="false" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -134,6 +144,7 @@
       <find>satı</find>
       <find>product-price</find>
       <find>teklif sepe</find>
+      <find>sepetim</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,12 +159,12 @@
         <option value="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
         <option value="$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php" />
         <option value="$PROJECT_DIR$/front/js/system/org.js" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
         <option value="$PROJECT_DIR$/front/css/custom.css" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/front/css/global.css" />
         <option value="$PROJECT_DIR$/protected/views/urun/ihaleler.php" />
         <option value="$PROJECT_DIR$/protected/views/urun/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
       </list>
     </option>
   </component>
@@ -277,7 +288,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php" />
+    <property name="SearchEverywhereHistoryKey" value="fro&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager">
@@ -354,12 +365,12 @@
       <workItem from="1483131243005" duration="769000" />
       <workItem from="1484682008934" duration="75000" />
       <workItem from="1484752860292" duration="14639000" />
-      <workItem from="1484935118911" duration="6992000" />
+      <workItem from="1484935118911" duration="7168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22475000" />
+    <option name="totallyTimeSpent" value="22651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="681" extended-state="6" />
@@ -579,14 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1892">
-          <caret line="243" column="39" lean-forward="false" selection-start-line="243" selection-start-column="39" selection-end-line="243" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/js/system/org.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -657,8 +660,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="728">
           <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="177" column="33" lean-forward="false" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
           <folding />
         </state>
       </provider>
