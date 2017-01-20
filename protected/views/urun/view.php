@@ -73,7 +73,7 @@
                             <hr>
                             <div class="variations-box">
                                 <table class="variations-table">
-                                    <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                    <?php if(empty(Yii::app()->user->getState("supplier_id"))) : ?>
 
                                     <tr>
                                         <td class="table-label">Adet</td>
@@ -110,7 +110,7 @@
                                     <?php endif; ?>
                                 </table>
                                 <hr/>
-                                <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                <?php if(empty(Yii::app()->user->getState("supplier_id"))) : ?>
 
                                 <?php if($modelProduct->salestype==2):?>
 
@@ -128,7 +128,7 @@
                             </div>
 
                             <div class="box-control-button">
-                                <?php if(!empty(Yii::app()->user->getState("user_id"))) : ?>
+                                <?php if(empty(Yii::app()->user->getState("supplier_id"))) : ?>
                                 <a title="Takip Listesine Ekle" class="link-wishlist" href="#">Takip Listesi</a>
                                 <a title="Karşılaştırma Listesine Ekle" class="link-compare" href="#">Karşılaştır</a>
                                 <a title="Satıcıya Mesaj Gönder" class="link-sendmail" href="#">Satıcıya Mesaj Gönder</a>
