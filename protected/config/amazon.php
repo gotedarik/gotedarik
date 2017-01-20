@@ -4,8 +4,8 @@
 return array(
 
 		"eu-central-1"=>array(
-            'key'    => 'AKIAITP34VYEG545AWIA',
-            'secret' => '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',
+            'key'    => 'AKIAIA527AKETMMLHQQQ',
+            'secret' => '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',
             'region' => 'eu-central-1',
     		'version' => 'latest',
         ),

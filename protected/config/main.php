@@ -135,7 +135,7 @@ return array(
 			"password"=>"fy23tz98",
 			"db"=>"gotedarik"
 		),
-		'cdn'=>'https://s3.eu-central-1.amazonaws.com/organizetedarik/',
+		'cdn'=>'https://s3.eu-central-1.amazonaws.com/gotedarik/',
 		// this is used in contact page
 		'amazon'=>require(dirname(__FILE__).'/amazon.php'),
 		'listPerPage' => 6,

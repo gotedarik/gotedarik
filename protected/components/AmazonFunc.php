@@ -10,7 +10,7 @@ class AmazonFunc{
 		
 
 		$amazons30=$S3::uploadingObject()
-							->setTargetBucket("organizetedarik") 
+							->setTargetBucket("gotedarik") 
 							->setThisFile($file)
 							->setTargetFileKeyName($filename)
 							->setAcl("public-read-write")
@@ -33,7 +33,7 @@ class AmazonFunc{
 		{
 			if(!empty($value)){
 				$S3::deletingObject()
-				->setSourceBucket("organizetedarik")
+				->setSourceBucket("gotedarik")
 				->setSourceFileKeyName($value)
 				->run();
 
