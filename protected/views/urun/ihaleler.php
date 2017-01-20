@@ -25,6 +25,9 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <?php if(count($model) == 0){
+                            echo "<tr><td class='text-center' colspan='6'>Henüz ihaleye girmediniz</td></tr>";
+                        } ?>
                         <?php foreach ($model as $key => $value): ?>
 
                         <tr>

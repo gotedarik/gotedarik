@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2017/01/18 20:08:32 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:703
 Stack trace:
 #0 /var/www/html/gotedarik/protected/controllers/UrunController.php(216): UrunController->loadModelCode('data/option1/p3...')
@@ -3387,6 +3388,118 @@ REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
 HTTP_REFERER=http://localhost/gotedarik/urun/10020-tam-altin-2016-yeni-tarihli-kulplu
 ---
 2017/01/18 21:46:17 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+=======
+2017/01/10 21:00:01 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/10 21:00:01 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('opportunityprod...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/opport...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/opportunityproducts
+---
+2017/01/10 21:00:01 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/10 21:00:01 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/12 07:38:27 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('opportunityprod...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/opport...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/opportunityproducts
+---
+2017/01/12 07:38:27 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -3408,6 +3521,140 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
 ---
+2017/01/12 07:38:27 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/12 07:38:27 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/12 07:38:27 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 19:34:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/15 19:34:32 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 19:34:33 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+---
+<<<<<<< HEAD
 2017/01/18 22:05:39 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:703
 Stack trace:
 #0 /var/www/html/gotedarik/protected/controllers/UrunController.php(216): UrunController->loadModelCode('data/option1/p3...')
@@ -5712,6 +5959,8 @@ REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
 HTTP_REFERER=http://localhost/gotedarik/urun/10020-tam-altin-2016-yeni-tarihli-kulplu
 ---
 2017/01/20 21:46:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+=======
+2017/01/15 19:36:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -5720,6 +5969,382 @@ Stack trace:
 #4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
 #5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
 #6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+---
+2017/01/15 19:36:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 19:36:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 19:36:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('opportunityprod...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/opport...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/opportunityproducts
+---
+2017/01/15 19:36:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/15 20:08:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 20:08:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('opportunityprod...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/opport...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/opportunityproducts
+---
+2017/01/15 20:08:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/15 20:08:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 20:08:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+---
+2017/01/15 22:22:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+---
+2017/01/15 22:22:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 22:22:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 22:44:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('opportunityprod...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/opport...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/opportunityproducts
+---
+2017/01/15 22:44:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 22:44:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 22:44:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/15 22:44:38 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+<<<<<<< HEAD
 #7 /var/www/html/gotedarik/protected/controllers/SiteController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
 #8 /var/www/html/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
 #9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
@@ -5734,6 +6359,22 @@ REQUEST_URI=/gotedarik/site/index
 HTTP_REFERER=http://localhost/gotedarik/urun/teklifsepetim
 ---
 2017/01/20 21:46:01 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+=======
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+---
+2017/01/15 22:46:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -5742,6 +6383,7 @@ Stack trace:
 #4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
 #5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
 #6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+<<<<<<< HEAD
 #7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
 #8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
 #9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
@@ -5778,6 +6420,22 @@ Stack trace:
 REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
 ---
 2017/01/20 21:46:04 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+=======
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 22:46:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -5786,6 +6444,7 @@ Stack trace:
 #4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
 #5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
 #6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+<<<<<<< HEAD
 #7 /var/www/html/gotedarik/protected/controllers/SiteController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
 #8 /var/www/html/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
 #9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
@@ -5800,6 +6459,22 @@ REQUEST_URI=/gotedarik/site/index
 HTTP_REFERER=http://localhost/gotedarik/urun/teklifsepetim
 ---
 2017/01/20 21:46:04 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+=======
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/15 22:46:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -5808,6 +6483,7 @@ Stack trace:
 #4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
 #5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
 #6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+<<<<<<< HEAD
 #7 /var/www/html/gotedarik/protected/controllers/SiteController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
 #8 /var/www/html/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
 #9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
@@ -5887,6 +6563,22 @@ Stack trace:
 REQUEST_URI=/gotedarik/queue1m1/homeproductbid
 ---
 2017/01/20 21:46:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+=======
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 22:54:11 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -5908,7 +6600,55 @@ Stack trace:
 #17 {main}
 REQUEST_URI=/gotedarik/queue1m1/recentlyadded
 ---
+<<<<<<< HEAD
 2017/01/20 21:46:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+=======
+2017/01/15 22:54:11 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 22:56:11 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+---
+2017/01/15 22:56:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
 Stack trace:
 #0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
 #1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
@@ -6326,6 +7066,7 @@ Stack trace:
 REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
 HTTP_REFERER=http://localhost/gotedarik/urun/10020-tam-altin-2016-yeni-tarihli-kulplu
 ---
+<<<<<<< HEAD
 2017/01/20 21:59:37 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:703
 Stack trace:
 #0 /var/www/html/gotedarik/protected/controllers/UrunController.php(216): UrunController->loadModelCode('data/option1/p3...')
@@ -6711,4 +7452,137 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
 HTTP_REFERER=http://localhost/gotedarik/urun/10020-tam-altin-2016-yeni-tarihli-kulplu
+=======
+2017/01/15 22:56:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 22:58:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(83): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(29): Products_Que::recentlyadded()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionRecentlyadded()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('recentlyadded')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/recent...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/recentlyadded
+---
+2017/01/15 22:58:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(19): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(8): Products_Que::homeProductBid()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomeproductbid()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/15 22:58:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(40): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(14): Products_Que::opportunityproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionOpportunityproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('opportunityprod...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/opport...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/opportunityproducts
+---
+2017/01/15 22:58:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/News_Que.php(17): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(19): News_Que::homeNews()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionHomenews()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homenews')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homene...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/homenews
+---
+2017/01/15 22:58:26 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /var/www/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/html/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /var/www/html/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /var/www/html/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /var/www/html/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /var/www/html/gotedarik/protected/queue/Products_Que.php(61): CActiveRecord->findAll(Object(CDbCriteria))
+#8 /var/www/html/gotedarik/protected/controllers/Queue1m1Controller.php(24): Products_Que::choosetoseizeproducts()
+#9 /var/www/html/framework/web/actions/CInlineAction.php(49): Queue1m1Controller->actionChoosetoseizeproducts()
+#10 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('choosetoseizepr...')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/choose...')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/queue1m1/choosetoseizeproducts
+>>>>>>> cfb1f9c0a19504b172d8b659bef7af40ff951ca3
 ---

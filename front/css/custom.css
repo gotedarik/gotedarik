@@ -133,3 +133,38 @@
     opacity:0;
 }
 /* countdown */
+
+/* indirim */
+.discount-container{
+    color: #fff;
+    position: absolute;
+    z-index: 9999;
+}
+.discount-container .green_color{
+    width: 40px;
+    height: 66px!important;
+    background: url(../images/discount.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.discount-container .discount-detail{
+    padding-top: 7px;
+    position: relative;
+    font-family: Arial;
+    text-align: center;
+}
+.discount-container .discount-detail .percentage{
+    font: 700 10px/20px Arial;
+    position: relative;
+    top: 8px;
+    left: 2px;
+    line-height: 3px;
+}
+.discount-container .discount-detail .rate{
+    font: 700 10px/20px Arial;
+}
+.discount-container .discount-detail .indirim{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 0px;
+}
+/* indirim */

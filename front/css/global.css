@@ -580,6 +580,10 @@ img.alignright{
 .product-price{
   font-weight: bold;
   color: #ffb424;
+  font-size: 18px;
+}.product-price1{
+  font-weight: bold;
+  color: #ffb424;
   font-size: 24px;
 }
 .product-price-old{

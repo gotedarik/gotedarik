@@ -2,84 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff008f3-ccf4-406a-a21a-7e31730e83d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/autocomplete/indicator.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/autocomplete/indicator.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_222222_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_2e83ff_256x240.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_2e83ff_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_454545_256x240.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_454545_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_888888_256x240.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_888888_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_cd0a0a_256x240.png" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/rating/delete.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/rating/delete.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/rating/star.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/rating/star.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/ajax-loader.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/ajax-loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/file.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/file.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/folder-closed.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/folder-closed.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/folder.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/folder.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/minus.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/minus.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/plus.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/plus.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-black-line.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-black-line.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-black.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-black.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-default-line.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-default-line.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-default.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-default.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-famfamfam-line.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-famfamfam-line.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-famfamfam.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-famfamfam.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-gray-line.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-gray-line.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-gray.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-gray.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-red-line.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-red-line.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-red.gif" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/images/treeview-red.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/autocomplete/jquery.autocomplete.css" afterPath="$PROJECT_DIR$/assets/99ebf1d0/autocomplete/jquery.autocomplete.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.ajaxqueue.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.ajaxqueue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.autocomplete.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.ba-bbq.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.ba-bbq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.ba-bbq.min.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.ba-bbq.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.bgiframe.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.bgiframe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.cookie.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.cookie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.history.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.maskedinput.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.maskedinput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.maskedinput.min.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.maskedinput.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.metadata.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.min.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.multifile.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.multifile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.rating.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.rating.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.treeview.async.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.treeview.async.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.treeview.edit.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.treeview.edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.treeview.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.treeview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.yii.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.yii.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.yiiactiveform.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.yiiactiveform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jquery.yiitab.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jquery.yiitab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/jquery-ui.css" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/css/base/jquery-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/js/jquery-ui-i18n.min.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/js/jquery-ui-i18n.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/jui/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/jui/js/jquery-ui.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/punycode.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/punycode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/punycode.min.js" afterPath="$PROJECT_DIR$/assets/99ebf1d0/punycode.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/rating/jquery.rating.css" afterPath="$PROJECT_DIR$/assets/99ebf1d0/rating/jquery.rating.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/treeview/jquery.treeview.css" afterPath="$PROJECT_DIR$/assets/99ebf1d0/treeview/jquery.treeview.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/99ebf1d0/yiitab/jquery.yiitab.css" afterPath="$PROJECT_DIR$/assets/99ebf1d0/yiitab/jquery.yiitab.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/6129c28f/pager.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/custom.css" afterPath="$PROJECT_DIR$/front/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/global.css" afterPath="$PROJECT_DIR$/front/css/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/style.css" afterPath="$PROJECT_DIR$/front/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/js/system/org.js" afterPath="$PROJECT_DIR$/front/js/system/org.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontadmin/css/custom.min.css" afterPath="$PROJECT_DIR$/frontadmin/css/custom.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/organizetedarik.sql" afterPath="$PROJECT_DIR$/organizetedarik.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.2" afterPath="$PROJECT_DIR$/protected/runtime/application.log.2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.3" afterPath="$PROJECT_DIR$/protected/runtime/application.log.3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.4" afterPath="$PROJECT_DIR$/protected/runtime/application.log.4" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.5" afterPath="$PROJECT_DIR$/protected/runtime/application.log.5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" afterPath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/takiplistesi.php" afterPath="$PROJECT_DIR$/protected/views/urun/takiplistesi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" afterPath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php" afterPath="$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/ihaleler.php" afterPath="$PROJECT_DIR$/protected/views/urun/ihaleler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/view.php" afterPath="$PROJECT_DIR$/protected/views/urun/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,18 +56,58 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="988" column="51" lean-forward="false" selection-start-line="988" selection-start-column="51" selection-end-line="988" selection-end-column="51" />
+            <state relative-caret-position="156">
+              <caret line="1008" column="74" lean-forward="false" selection-start-line="1008" selection-start-column="74" selection-end-line="1008" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/css/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="586" column="15" lean-forward="false" selection-start-line="586" selection-start-column="15" selection-end-line="586" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ara.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/urun/ara.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4680">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ihaleler.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/urun/ihaleler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+            <state relative-caret-position="278">
+              <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -160,6 +133,8 @@
       <find>sizin içi</find>
       <find>teklif</find>
       <find>satı</find>
+      <find>teklif sepe</find>
+      <find>product-price</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,17 +143,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/front/css/custom.css" />
         <option value="$PROJECT_DIR$/protected/views/urun/takiplistesi.php" />
-        <option value="$PROJECT_DIR$/front/css/global.css" />
         <option value="$PROJECT_DIR$/frontadmin/css/custom.min.css" />
         <option value="$PROJECT_DIR$/front/css/style.css" />
         <option value="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
         <option value="$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php" />
         <option value="$PROJECT_DIR$/front/js/system/org.js" />
         <option value="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
+        <option value="$PROJECT_DIR$/front/css/custom.css" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/urun/view.php" />
+        <option value="$PROJECT_DIR$/front/css/global.css" />
+        <option value="$PROJECT_DIR$/protected/views/urun/ihaleler.php" />
       </list>
     </option>
   </component>
@@ -276,130 +252,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontLayout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gotedarik" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -408,7 +260,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php" />
+    <property name="SearchEverywhereHistoryKey" value="custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager">
@@ -485,12 +337,12 @@
       <workItem from="1483131243005" duration="769000" />
       <workItem from="1484682008934" duration="75000" />
       <workItem from="1484752860292" duration="14639000" />
-      <workItem from="1484935118911" duration="5294000" />
+      <workItem from="1484935118911" duration="6800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20777000" />
+    <option name="totallyTimeSpent" value="22283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="681" extended-state="6" />
@@ -600,10 +452,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -611,10 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -622,22 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="134" column="15" lean-forward="false" selection-start-line="134" selection-start-column="15" selection-end-line="134" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="756" column="18" lean-forward="false" selection-start-line="756" selection-start-column="18" selection-end-line="756" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -695,7 +525,7 @@
         <state relative-caret-position="237">
           <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="n#style#0;n#a#2;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,10 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1892">
           <caret line="243" column="39" lean-forward="false" selection-start-line="243" selection-start-column="39" selection-end-line="243" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#1;n#div#1;n#div#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -771,18 +598,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="988" column="51" lean-forward="false" selection-start-line="988" selection-start-column="51" selection-end-line="988" selection-end-column="51" />
+        <state relative-caret-position="156">
+          <caret line="1008" column="74" lean-forward="false" selection-start-line="1008" selection-start-column="74" selection-end-line="1008" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="87" column="51" lean-forward="false" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+        <state relative-caret-position="278">
+          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="586" column="15" lean-forward="false" selection-start-line="586" selection-start-column="15" selection-end-line="586" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/ara.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4680">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/ihaleler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding />
         </state>
       </provider>

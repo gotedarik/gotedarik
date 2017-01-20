@@ -986,7 +986,15 @@
 
 									<li class="product">
 										<div class="product-container">
-                                            indirim
+                                            <div class="discount-container pull-right">
+                                                <div class="green_color">
+                                                    <div class="discount-detail ">
+                                                        <span class="percentage">%</span>
+                                                        <span class="rate">25</span>
+                                                        <span class="indirim">İndirim</span>
+                                                    </div>
+                                                </div>
+                                            </div>
 											<div class="product-left">
 												<div class="product-thumb">
 													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>

@@ -47,7 +47,7 @@
                             <?php endif; ?>
                             <div class="price-box">
                                 <?php if($modelProduct->salestype == 1 && $modelProduct->price > 0) :  ?>
-                                    <span class="product-price">
+                                    <span class="product-price1">
                                         <?=number_format($modelProduct->price,2)?>
                                         <span style="font-size: 16px"><?=Params::getParams_("currency",$modelProduct->currency)?></span>
                                     </span>
