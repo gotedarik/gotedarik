@@ -1,8 +1,8 @@
 <div class="col-md-5 mar1">
     <p id="billing_last_name_field" class="form-row form-row">
             <span class="img-box2 col-lg-12 col-sm-12 col-xs-12">
-            <img id="productimageB_img" src="<?=isset($arr1images[0]["imageL"])?$arr1images[0]["imageL"]:Yii::app()->request->baseUrl."/front/images/img_upload.png";?>" class="img-responsive img-box-img-main" alt="">
-                   <input name="upl" image="" id="productimageB" class="fileuproduct-main" type="file" accept="image/*">
+                <input name="upl" image="" id="productimageB" class="fileuproduct-main" type="file" accept="image/*">
+                <img id="productimageB_img" src="<?=isset($arr1images[0]["imageL"])?$arr1images[0]["imageL"]:Yii::app()->request->baseUrl."/front/images/img_upload.png";?>" class="img-responsive img-box-img-main" alt="">
             </span>
 
             <div class="row hides" id="productImagesProgressro">

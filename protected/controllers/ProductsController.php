@@ -211,6 +211,7 @@ class ProductsController extends Controller
 				
 				if($model->salestype==2)
 				{
+
 					$model->startingprice=$dt->startingprice;
 					$model->price=$dt->startingprice;
 				}

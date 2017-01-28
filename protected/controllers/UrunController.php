@@ -200,6 +200,9 @@ class UrunController extends Controller
 
     }
 
+    public function actionAra2(){
+	    $this->render("ara2");
+    }
 
 	public function actionTeklifsepetineekle($id)
 	{

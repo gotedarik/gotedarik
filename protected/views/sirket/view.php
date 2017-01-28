@@ -132,83 +132,397 @@ Licensed under MIT
                     ));
 
                     ?>
+                </div>
 
 
-                    <ul class="products columns-4">
-                        <?php
-
-                            foreach ($products as $key=>$value) :
-                                if($key==0 || $key %4 == 0){
-                                    $cls="first";
-                                }else if($key % 4 == 3){
-                                    $cls = "last";
-                                }else if($key % 4 == 2){
-                                    $cls = "";
-                                }else{
-                                $cls = "";
-                                }
-
-                        ?>
-                        <li class="product <?=$cls?>">
-                            <div class="product-outer">
-                                <div class="product-inner">
-                                    <?php if(!empty($value->discount)) : ?>
-                                        <div class="discount-container pull-right">
-                                            <div class="green_color">
-                                                <div class="discount-detail ">
-                                                    <span class="percentage">%</span>
-                                                    <span class="rate"><?=$value->discount?></span>
-                                                    <span class="indirim">İndirim</span>
-                                                </div>
-                                            </div>
+                <div class="category-products">
+                    <ul class="products row">
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p11.jpg" alt="Product"></a>
                                         </div>
-                                    <?php endif; ?>
-                                    <span class="loop-product-categories"><a href="product-category.html" rel="tag"><?=$value->productgroup_name?></a></span>
-                                    <a href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>">
-                                        <h3><?=$value->name?></h3>
-                                        <div class="product-thumbnail">
-
-                                            <img style="max-height: 142px!important;" class="center-block" src="<?=$value->imageS?>" alt="">
-
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
                                         </div>
-                                    </a>
-
-                                    <div class="price-add-to-cart">
-                                                            <span class="price">
-                                                                <?php if(!empty($value->discount)) : ?>
-
-                                                                <span class="electro-price">
-                                                                    <ins><span class="amount"> <?= number_format($value->price,2)?> <?=Params::getParams_("currency",$value->currency)?></span></ins>
-                                                                    <del><span class="amount"><?=Func::inidianCalculation($value->price,$value->discount,2)?> <?=Params::getParams_("currency",$value->currency)?></span></del>
-                                                                    <span class="amount"> </span>
-                                                                </span>
-                                                                <?php endif; ?>
-                                                                <?php if(empty($value->discount)) : ?>
-                                                                    <span class="electro-price">
-                                                                        <ins><span class="amount"> </span></ins>
-                                                                        <span class="amount"> <?= number_format($value->price,2)?> <?=Params::getParams_("currency",$value->currency)?></span>
-                                                                    </span>
-                                                                <?php endif; ?>
-
-                                                            </span>
-                                    </div><!-- /.price-add-to-cart -->
-
-                                    <div class="hover-area">
-                                        <div class="action-buttons">
-                                            <a style="cursor: pointer" onclick="addfollowlist(<?=$value->code?>)" class="add_to_wishlist">Listene Ekle</a>
-                                            <a style="cursor: pointer" onclick="addcomparelist(<?=$value->code?>)" class="add-to-compare-link">Karşılaştır</a>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- /.product-inner -->
-                            </div><!-- /.product-outer -->
+                            </div>
                         </li>
-
-                        <?php endforeach; ?>
-
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p12.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p13.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p14.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p15.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p16.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p17.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p18.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p19.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p20.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p21.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product col-xs-12 col-sm-4 col-md-3">
+                            <div class="product-container">
+                                <div class="inner">
+                                    <div class="product-left">
+                                        <div class="product-thumb">
+                                            <a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option1/p22.jpg" alt="Product"></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-name">
+                                            <a href="#">Cotton Lycra Leggings</a>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="product-price">$139.98</span>
+                                            <span class="product-price-old">$169.00</span>
+                                        </div>
+                                        <div class="product-star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </div>
+                                        <div class="product-button">
+                                            <a class="btn-add-wishlist" title="Add to Wishlist" href="#">Add Wishlist</a>
+                                            <a class="btn-add-comparre" title="Add to Compare" href="#">Add Compare</a>
+                                            <a class="button-radius btn-add-cart" title="Add to Cart" href="#">İncele<span class="icon"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-
             </div>
         </div>
 

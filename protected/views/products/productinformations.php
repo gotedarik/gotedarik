@@ -104,7 +104,7 @@ $this->renderPartial("head");
                                                                  $arrdiscount=array();
                                                                  for($i=0;$i<100;$i=$i+5)
                                                                  {
-                                                                    $arrdiscount[$i]=$i;
+                                                                    $arrdiscount[$i]="%".$i;
                                                                  }
                                                                  echo CHtml::dropDownList('product_discount', $modelProduct->discount, $arrdiscount,array("class" => "select-input")
                                                                );

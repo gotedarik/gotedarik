@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff008f3-ccf4-406a-a21a-7e31730e83d1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/custom.css" afterPath="$PROJECT_DIR$/front/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/style.css" afterPath="$PROJECT_DIR$/front/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/js/system/org.js" afterPath="$PROJECT_DIR$/front/js/system/org.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/protected/controllers/ProductsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/UrunController.php" afterPath="$PROJECT_DIR$/protected/controllers/UrunController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.2" afterPath="$PROJECT_DIR$/protected/runtime/application.log.2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.3" afterPath="$PROJECT_DIR$/protected/runtime/application.log.3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.4" afterPath="$PROJECT_DIR$/protected/runtime/application.log.4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.5" afterPath="$PROJECT_DIR$/protected/runtime/application.log.5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" afterPath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/head.php" afterPath="$PROJECT_DIR$/protected/views/products/head.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/list.php" afterPath="$PROJECT_DIR$/protected/views/products/list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/productinformations.php" afterPath="$PROJECT_DIR$/protected/views/products/productinformations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/productinformations/productimages.php" afterPath="$PROJECT_DIR$/protected/views/products/productinformations/productimages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/productreview.php" afterPath="$PROJECT_DIR$/protected/views/products/productreview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/sirket/leftinformations.php" afterPath="$PROJECT_DIR$/protected/views/sirket/leftinformations.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/sirket/view.php" afterPath="$PROJECT_DIR$/protected/views/sirket/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" afterPath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/view.php" afterPath="$PROJECT_DIR$/protected/views/urun/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,24 +42,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="org.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/js/system/org.js">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="619" column="48" lean-forward="false" selection-start-line="619" selection-start-column="48" selection-end-line="619" selection-end-column="48" />
-              <folding>
-                <marker date="1484939027020" expanded="true" signature="13042:13061" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="13454:13473" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="14122:14141" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="14897:14916" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="15845:15860" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="22968:23014" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="23079:23085" ph=" " />
-                <marker date="1484939027020" expanded="true" signature="23085:23091" ph=" " />
-                <marker date="1484939027020" expanded="true" signature="23426:23472" ph="..." />
-                <marker date="1484939027020" expanded="true" signature="23537:23543" ph=" " />
-                <marker date="1484939027020" expanded="true" signature="23543:23549" ph=" " />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="197" column="148" lean-forward="false" selection-start-line="197" selection-start-column="148" selection-end-line="197" selection-end-column="148" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SirketController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SirketController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-512">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,107 +65,70 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="1008" column="74" lean-forward="false" selection-start-line="1008" selection-start-column="74" selection-end-line="1008" selection-end-column="74" />
+            <state relative-caret-position="300">
+              <caret line="931" column="81" lean-forward="false" selection-start-line="931" selection-start-column="81" selection-end-line="931" selection-end-column="174" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/css/global.css">
+      <file leaf-file-name="UrunController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/UrunController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="586" column="15" lean-forward="false" selection-start-line="586" selection-start-column="15" selection-end-line="586" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ara.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/urun/ara.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4680">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ihaleler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/urun/ihaleler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontlayout.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="177" column="33" lean-forward="false" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllowExpression.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/AllowExpression.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="61" lean-forward="false" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="61" />
-              <folding />
+            <state relative-caret-position="173">
+              <caret line="245" column="21" lean-forward="false" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="21" />
+              <folding>
+                <element signature="n#actionAra#0;n#UrunController#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>foreac</find>
-      <find>products</find>
-      <find>top seller</find>
-      <find>body</find>
-      <find>product-count-down</find>
-      <find>urunkars</find>
-      <find>addcomp</find>
-      <find>btn-add-wishlist</find>
-      <find>addcomparelist</find>
-      <find>delete</find>
       <find>addf</find>
       <find>urunka</find>
       <find>deleteoffer</find>
       <find>sizin içi</find>
       <find>teklif</find>
       <find>satı</find>
-      <find>product-price</find>
-      <find>teklif sepe</find>
       <find>sepetim</find>
+      <find>teklif sepe</find>
+      <find>product-price</find>
+      <find>mar1</find>
+      <find>img-box2</find>
+      <find>img-box1</find>
+      <find>col-md-5</find>
+      <find>productinformationsfileuproduct-main</find>
+      <find>fileuproduct-main</find>
+      <find>actionara</find>
+      <find>adet</find>
+      <find>$modelSupplierscompany-&gt;name</find>
+      <find>startingprice</find>
+      <find>productinformationsave</find>
+      <find>mask</find>
+      <find>product_startingprice</find>
+      <find>countdown</find>
+      <find>İhaleler</find>
+      <find>select-in</find>
+      <find>teklif ver</find>
+      <find>onclick</find>
+      <find>&lt;a title=&quot;Quick View&quot; href=&quot;#&quot; class=&quot;btn-quick-view&quot;&gt;Quick View&lt;/a&gt;</find>
+      <find>Buy</find>
+      <find>suppliersinf</find>
     </findStrings>
+    <replaceStrings>
+      <replace>İncele</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,16 +138,27 @@
       <list>
         <option value="$PROJECT_DIR$/protected/views/urun/takiplistesi.php" />
         <option value="$PROJECT_DIR$/frontadmin/css/custom.min.css" />
-        <option value="$PROJECT_DIR$/front/css/style.css" />
-        <option value="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
         <option value="$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php" />
-        <option value="$PROJECT_DIR$/front/js/system/org.js" />
-        <option value="$PROJECT_DIR$/front/css/custom.css" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
-        <option value="$PROJECT_DIR$/front/css/global.css" />
         <option value="$PROJECT_DIR$/protected/views/urun/ihaleler.php" />
-        <option value="$PROJECT_DIR$/protected/views/urun/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/products/productinformations/productimages.php" />
+        <option value="$PROJECT_DIR$/protected/views/products/list.php" />
+        <option value="$PROJECT_DIR$/protected/views/urun/ara2.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/UrunController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/products/head.php" />
+        <option value="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
+        <option value="$PROJECT_DIR$/front/js/system/org.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/protected/views/products/productinformations.php" />
+        <option value="$PROJECT_DIR$/front/css/custom.css" />
+        <option value="$PROJECT_DIR$/front/css/style.css" />
+        <option value="$PROJECT_DIR$/protected/views/products/productreview.php" />
+        <option value="$PROJECT_DIR$/front/css/global.css" />
+        <option value="$PROJECT_DIR$/front/css/custom2.css" />
         <option value="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
+        <option value="$PROJECT_DIR$/protected/views/sirket/leftinformations.php" />
+        <option value="$PROJECT_DIR$/protected/views/sirket/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/urun/view.php" />
       </list>
     </option>
   </component>
@@ -195,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -258,7 +251,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="urun" />
+              <option name="myItemId" value="sirket" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -272,24 +265,40 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gotedarik" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gotedarik" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="fro&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../organizetedarik" />
+    <property name="SearchEverywhereHistoryKey" value="sirk&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/SirketController.php&#10;site/in&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;uruncon&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/UrunController.php&#10;urun/vi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;site/index&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;index&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;globa&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/global.css&#10;style.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;cu&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;produ&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/products/productreview.php&#10;site/inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;cust&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;layou&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;cus&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;tek&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;fro&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -365,12 +374,14 @@
       <workItem from="1483131243005" duration="769000" />
       <workItem from="1484682008934" duration="75000" />
       <workItem from="1484752860292" duration="14639000" />
-      <workItem from="1484935118911" duration="7168000" />
+      <workItem from="1484935118911" duration="11466000" />
+      <workItem from="1485540794831" duration="7959000" />
+      <workItem from="1485592931134" duration="8963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22651000" />
+    <option name="totallyTimeSpent" value="43871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="681" extended-state="6" />
@@ -402,10 +413,52 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/front/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" column="15" lean-forward="false" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/productinformations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="77" lean-forward="false" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/productinformations/productimages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3195">
+          <caret line="213" column="26" lean-forward="false" selection-start-line="213" selection-start-column="26" selection-end-line="213" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -419,17 +472,41 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1484939027020" expanded="true" signature="13042:13061" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="13454:13473" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="14122:14141" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="14897:14916" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="15845:15860" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="22968:23014" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="23079:23085" ph=" " />
-            <marker date="1484939027020" expanded="true" signature="23085:23091" ph=" " />
-            <marker date="1484939027020" expanded="true" signature="23426:23472" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="23537:23543" ph=" " />
-            <marker date="1484939027020" expanded="true" signature="23543:23549" ph=" " />
+            <element signature="n#!!block;n#isInt#0" expanded="false" />
+            <element signature="n#!!block;n#isFloat#0" expanded="false" />
+            <element signature="n#!!block;n#validateEmail#0" expanded="false" />
+            <element signature="n#!!block;n#errorGoto#0" expanded="false" />
+            <element signature="n#!!block;n#isNumber#0" expanded="false" />
+            <element signature="n#!!block;n#userlogin#0" expanded="false" />
+            <element signature="n#!!block;n#supplierlogin#0" expanded="false" />
+            <element signature="n#!!block;n#userFLogin#0" expanded="false" />
+            <element signature="n#!!block;n#suppliersFLogin#0" expanded="false" />
+            <element signature="n#!!block;n#userregister#0" expanded="false" />
+            <element signature="n#!!block;n#supplierregister#0" expanded="false" />
+            <element signature="n#!!block;n#changepassword#0" expanded="false" />
+            <element signature="n#!!block;n#addofferlist#0" expanded="false" />
+            <element signature="n#!!block;n#addfollowlist#0" expanded="false" />
+            <element signature="n#!!block;n#addcomparelist#0" expanded="false" />
+            <element signature="n#!!block;n#clearFollowlist#0" expanded="false" />
+            <element signature="n#!!block;n#clearOfferbasket#0" expanded="false" />
+            <element signature="n#!!block;n#deleteofferitem#0" expanded="false" />
+            <element signature="n#!!block;n#deletefollowitem#0" expanded="false" />
+            <element signature="n#!!block;n#deletecompareitem#0" expanded="false" />
+            <element signature="n#!!block;n#sendofferunitprice#0" expanded="false" />
+            <element signature="n#!!block;n#sendoffers#0" expanded="false" />
+            <element signature="n#!!block;n#sendtenderoffer#0" expanded="false" />
+            <element signature="n#!!block;n#changepiece#0" expanded="false" />
+            <marker date="1485544610004" expanded="true" signature="13042:13061" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="13454:13473" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="14122:14141" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="14897:14916" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="15845:15860" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="23198:23244" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="23309:23315" ph=" " />
+            <marker date="1485544610004" expanded="true" signature="23315:23321" ph=" " />
+            <marker date="1485544610004" expanded="true" signature="23656:23702" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="23767:23773" ph=" " />
+            <marker date="1485544610004" expanded="true" signature="23773:23779" ph=" " />
           </folding>
         </state>
       </provider>
@@ -472,7 +549,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6435">
           <caret line="429" column="48" lean-forward="true" selection-start-line="429" selection-start-column="48" selection-end-line="429" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="n#actionAra#0;n#UrunController#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -518,43 +597,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/UrunController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="499" column="70" lean-forward="true" selection-start-line="499" selection-start-column="70" selection-end-line="499" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/urun/teklifsepetim.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="69" column="46" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1484938582030" expanded="true" signature="1320:1339" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/urun/urunkarsilastir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#a#2;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -574,78 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SirketController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1125">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/BuildfakeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/js/system/org.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="619" column="48" lean-forward="false" selection-start-line="619" selection-start-column="48" selection-end-line="619" selection-end-column="48" />
-          <folding>
-            <marker date="1484939027020" expanded="true" signature="13042:13061" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="13454:13473" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="14122:14141" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="14897:14916" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="15845:15860" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="22968:23014" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="23079:23085" ph=" " />
-            <marker date="1484939027020" expanded="true" signature="23085:23091" ph=" " />
-            <marker date="1484939027020" expanded="true" signature="23426:23472" ph="..." />
-            <marker date="1484939027020" expanded="true" signature="23537:23543" ph=" " />
-            <marker date="1484939027020" expanded="true" signature="23543:23549" ph=" " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="586" column="15" lean-forward="false" selection-start-line="586" selection-start-column="15" selection-end-line="586" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/urun/ara.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4680">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/urun/ihaleler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="1008" column="74" lean-forward="false" selection-start-line="1008" selection-start-column="74" selection-end-line="1008" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -658,18 +637,246 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/ihaleler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="112" column="41" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+        <state relative-caret-position="420">
+          <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/ara.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4680">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/TestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/ara2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="821" column="6" lean-forward="false" selection-start-line="821" selection-start-column="6" selection-end-line="821" selection-end-column="6" />
+          <folding>
+            <element signature="e#5475#5480#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="215" column="22" lean-forward="false" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/productinformations/productimages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/js/system/org.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="727" column="20" lean-forward="false" selection-start-line="727" selection-start-column="20" selection-end-line="727" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#isInt#0" expanded="false" />
+            <element signature="n#!!block;n#isFloat#0" expanded="false" />
+            <element signature="n#!!block;n#validateEmail#0" expanded="false" />
+            <element signature="n#!!block;n#errorGoto#0" expanded="false" />
+            <element signature="n#!!block;n#isNumber#0" expanded="false" />
+            <element signature="n#!!block;n#userlogin#0" expanded="false" />
+            <element signature="n#!!block;n#supplierlogin#0" expanded="false" />
+            <element signature="n#!!block;n#userFLogin#0" expanded="false" />
+            <element signature="n#!!block;n#suppliersFLogin#0" expanded="false" />
+            <element signature="n#!!block;n#userregister#0" expanded="false" />
+            <element signature="n#!!block;n#supplierregister#0" expanded="false" />
+            <element signature="n#!!block;n#changepassword#0" expanded="false" />
+            <element signature="n#!!block;n#addofferlist#0" expanded="false" />
+            <element signature="n#!!block;n#addfollowlist#0" expanded="false" />
+            <element signature="n#!!block;n#addcomparelist#0" expanded="false" />
+            <element signature="n#!!block;n#clearFollowlist#0" expanded="false" />
+            <element signature="n#!!block;n#clearOfferbasket#0" expanded="false" />
+            <element signature="n#!!block;n#deleteofferitem#0" expanded="false" />
+            <element signature="n#!!block;n#deletefollowitem#0" expanded="false" />
+            <element signature="n#!!block;n#deletecompareitem#0" expanded="false" />
+            <element signature="n#!!block;n#sendofferunitprice#0" expanded="false" />
+            <element signature="n#!!block;n#sendoffers#0" expanded="false" />
+            <element signature="n#!!block;n#sendtenderoffer#0" expanded="false" />
+            <element signature="n#!!block;n#changepiece#0" expanded="false" />
+            <marker date="1485544610004" expanded="true" signature="13042:13061" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="13454:13473" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="14122:14141" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="14897:14916" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="15845:15860" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="23198:23244" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="23309:23315" ph=" " />
+            <marker date="1485544610004" expanded="true" signature="23315:23321" ph=" " />
+            <marker date="1485544610004" expanded="true" signature="23656:23702" ph="..." />
+            <marker date="1485544610004" expanded="true" signature="23767:23773" ph=" " />
+            <marker date="1485544610004" expanded="true" signature="23773:23779" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/teklifsepetim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <marker date="1485544441916" expanded="true" signature="1320:1339" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/productinformations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="498" column="0" lean-forward="false" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/products/productreview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="169" column="43" lean-forward="false" selection-start-line="169" selection-start-column="43" selection-end-line="169" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/login2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="3294" column="0" lean-forward="true" selection-start-line="3294" selection-start-column="0" selection-end-line="3294" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/sirket/leftinformations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/sirket/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5881">
+          <caret line="517" column="117" lean-forward="false" selection-start-line="517" selection-start-column="117" selection-end-line="517" selection-end-column="117" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="177" column="33" lean-forward="false" selection-start-line="177" selection-start-column="33" selection-end-line="177" selection-end-column="33" />
+        <state relative-caret-position="233">
+          <caret line="29" column="90" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/custom2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="1009" column="1" lean-forward="false" selection-start-line="1009" selection-start-column="1" selection-end-line="1009" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="225" column="19" lean-forward="true" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="931" column="81" lean-forward="false" selection-start-line="931" selection-start-column="81" selection-end-line="931" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SirketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/UrunController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="245" column="21" lean-forward="false" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="21" />
+          <folding>
+            <element signature="n#actionAra#0;n#UrunController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="197" column="148" lean-forward="false" selection-start-line="197" selection-start-column="148" selection-end-line="197" selection-end-column="148" />
           <folding />
         </state>
       </provider>

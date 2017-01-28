@@ -1,96 +1,90 @@
+
 <?php
 
 $this->renderPartial("head");
 
 
 ?>
-<link rel="stylesheet" href="<?=Yii::app()->baseUrl;?>/front/css/jquery.fancybox.css">
-<script src="<?=Yii::app()->baseUrl;?>/front/js/jquery.elevatezoom.js"></script>
-<script src="<?=Yii::app()->baseUrl;?>/front/js/jquery.fancybox.pack.js"></script>
 
-    <div class="row setup-content" id="step-4">
-
+<div class="container product-page">
+    <div class="row">
+        <div class="block block-breadcrumbs">
+            <ul>
+                <li class="home">
+                    <a href="#"><i class="fa fa-home"></i></a>
+                    <span></span>
+                </li>
+                <li><a href="#">Beauty & Perfumes</a><span></span></li>
+                <li>Men</li>
+            </ul>
+        </div>
     </div>
+    <div class="row">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="block block-product-image">
+                    <div class="product-image easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                        <a href="<?=$arrimages[0]["imageXL"]?>">
+                            <img src="<?=$arrimages[0]["imageXL"]?>" alt="Product" width="450" height="450" />
+                        </a>
+                    </div>
+                    <div class="text">Resmi büyütmek için imleci üzerine götürün</div>
+                    <div class="product-list-thumb">
+                        <ul class="thumbnails kt-owl-carousel" data-margin="10" data-nav="true" data-responsive='{"0":{"items":2},"600":{"items":2},"1000":{"items":3}}'>
+                            <?php foreach($arrimages as $key=>$value):?>
+                                <li>
+                                    <a class="selected" href="<?=$value["imageXL"]?>" data-standard="<?=$value["imageXL"]?>">
+                                        <img src="<?=$value["imageXL"]?>" alt="" />
+                                    </a>
+                                </li>
+                            <?php endforeach?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <div class="block-product-info">
+                            <h2 class="product-name"><?=$modelProduct->name?></h2>
 
-</div>
+                            <div class="desc"> <?=$modelProduct->subtitle?></div>
+                            <br>
+                            <?php if($modelProduct->salestype == 2) :?>
+                                <span style="font-size: 16px;"><u>İhale Başlangıç Fiyatı</u></span><br>
+                            <?php endif; ?>
+                            <div class="price-box">
+                                <?php if($modelProduct->salestype == 1 && $modelProduct->price > 0) :  ?>
+                                    <span class="product-price1">
+                                        <?=number_format($modelProduct->price,2)?>
+                                        <span style="font-size: 16px"><?=Params::getParams_("currency",$modelProduct->currency)?></span>
+                                    </span>
+                                <?php endif; ?>
 
+                                <?php if($modelProduct->salestype == 2) :?>
+                                    <span class="product-price">
+                                        <?=number_format($modelProduct->startingprice,2)?>
+                                        <span style="font-size: 16px"><?=Params::getParams_("currency",$modelProduct->currency)?></span>
+                                    </span>
+                                <?php endif; ?>
 
-<div id="content" class="site-content" tabindex="-1">
-    <div class="container">
+                            </div>
+                            <div class="product-star">
+                                <?php
 
-        <div style="margin-top:40px"></div>
+                                for($i = 0;$i<$modelProduct->totalpoint;$i++){
+                                    echo "<i class=\"fa fa-star\"></i>";
+                                }
 
-        <div id="primary" class="content-area">
-            <main id="main" class="site-main">
-                <div class="product">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="single-product-wrapper">
-
-                                <div class="product-images-wrapper">
-                                    <?php if($modelProduct->salestype==2):?>
-                                        <span class="onsale">İhale !</span>
-                                    <?php endif?>
-                                    <div class="images electro-gallery">
-                                        <div style="padding: 50px 70px; border: 1px solid #ddd" class="thumbnails-single owl-carousel">
-                                            <?php foreach($arrimages as $key=>$value):?>
-                                                <img id="zoom_03"  src="<?=$value["imageXL"]?>" data-echo="<?=$value["imageXL"]?>" class="wp-post-image setsizeimg" alt="">
-                                            <?php endforeach?>
-                                        </div><!-- .thumbnails-single -->
-
-                                        <div id="gallery_01" class="thumbnails-all columns-5 owl-carousel">
-                                            <?php foreach($arrimages as $key=>$value):?>
-                                                <a href="javascript:;"  style="padding: 10px" data-image="<?=$value["imageXL"]?>" data-zoom-image="<?=$value["imageXL"]?>">
-                                                    <img id="zoom_03" style="width: 60px; height: 60px;" class="wp-post-image" src="<?=$value["imageS"]?>" />
-                                                </a>
-                                            <?php endforeach;?>
-                                        </div><!-- .thumbnails-all -->
-                                    </div><!-- .electro-gallery -->
-                                </div><!-- /.product-images-wrapper -->
-
-                                <div class="summary entry-summary give_height">
-
-                                    <h1 itemprop="name" class="product_title entry-title"><?=$modelProduct->name?></h1>
-                                    <h6 style="font-size: 12px;"><?=$modelProduct->subtitle?></h6>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <div class="fiyat pull-lg-left">
-                                            <?php if($modelProduct->price > 0) :  ?>
-                                                <?=number_format($modelProduct->price,2)?>
-                                                <span style="font-size: 16px"><?=Params::getParams_("currency",$modelProduct->currency)?></span>
-                                            <?php endif; ?>
-                                        </div>
-
-                                        <div class="woocommerce-product-rating pull-lg-right">
-                                            <div class="star-rating" title="5 üzderinden toplam puanı <?=$modelProduct->totalpoint?>">
-                                                    <span style="width:<?=Func::percentagepoints($modelProduct->totalpoint)?>%">
-                                                        <strong itemprop="ratingValue" class="rating"><?=$modelProduct->totalpoint?></strong>
-                                                        out of <span itemprop="bestRating">5</span>             üzerinden
-                                                        <span itemprop="ratingCount" class="rating"><?=$modelProduct->totalpoint?></span>
-                                                        puan aldı
-                                                    </span>
-                                            </div>
-
-                                            <a href="#reviews" class="woocommerce-review-link">(<span itemprop="reviewCount" class="count"><?=$modelProduct->uservotecount?></span> Kişi Oyladı)</a><br>
-                                            <span style="font-weight: bold; font-size: 12px; text-align: center"><a style="color: #484848" href="#">Yorum (300)</a> </span>
-                                        </div><!-- .woocommerce-product-rating -->
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <?php if(isset($modelSupplierscompany->name) && !empty($modelSupplierscompany->name)):?>
-
-                                            <div class="seller">Satıcı: <a href="#"><?=$modelSupplierscompany->name?></a> | <a href="#">Satıcının Diğer Ürünleri</a> |
-                                                Satıcının Genel Puanı <span style="background-color: #f28b00; color: white; padding: 4px; border-radius: 2px;"><?=!empty($modelSupplierscompany->totalpoint)?$modelSupplierscompany->totalpoint."/10":"-"?></span>
-                                            </div>
-                                        <?php endif?>
-
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <?php if($modelProduct->salestype==2):?>
-                                    <hr>
-                                    <div  class="col-md-12">
+                                ?>
+                            </div>
+                            <hr>
+                            <div class="variations-box">
+                                <table class="variations-table">
+                                <?php if($modelProduct->salestype==2): ?>
+                                    <tr>
+                                        <p class="text-center"><strong>İhale Bitimine Kalan Süre</strong></p>
                                         <div class="form-group timer_background">
-                                            <label for="inputEmail3" class="control-label">İhale Bitimine Kalan Süre</label>
                                             <div class="col-sm-12">
                                                 <div class="deal-countdown-timer center-block ">
                                                     <div id="deal-countdown1" class="countdown">
@@ -103,115 +97,171 @@ $this->renderPartial("head");
                                             </div>
 
                                         </div>
-                                    </div>
+                                    </tr>
+
+                                <?php endif; ?>
+
+                                        <tr>
+                                            <td class="table-label">Adet</td>
+                                            <td class="table-value">
+                                                <div class="box-qty">
+                                                    <button onclick="pmin();" class="quantity-minus">-</button>
+                                                    <input type="text" class="quantity" id="count_number" name="quantity" value="1">
+                                                    <button onclick="pup();" class="quantity-plus">+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">Beden</td>
+                                            <td class="table-value">
+                                                <ul class="list-check-box">
+                                                    <li><a href="#">39</a></li>
+                                                    <li><a href="#">40</a></li>
+                                                    <li><a href="#">41</a></li>
+                                                    <li><a href="#">42</a></li>
+                                                    <li><a href="#">43</a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">Renk</td>
+                                            <td class="table-value">
+                                                <ul class="list-check-box color">
+                                                    <li><a class="selected" href="#"><span style="background:#4d6dbd;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#fb5d5d;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#2fbcda;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#ffe00c;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#72b226;">Blue</span></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <?php if($modelProduct->salestype==2):?>
+                                            <tr>
+                                                <td class="table-label">Teklif ver</td>
+                                                <td class="table-value">
+                                                    <input class="select-input0" id="offermainprice" type="text">
+                                                    <select class="select-input1" id="decimal">
+                                                        <option selected="selected" value="00">00 Kr.</option>
+                                                        <option value="10">10 Kr.</option>
+                                                        <option value="20">20 Kr.</option>
+                                                        <option value="30">30 Kr.</option>
+                                                        <option value="40">40 Kr.</option>
+                                                        <option value="50">50 Kr.</option>
+                                                        <option value="60">60 Kr.</option>
+                                                        <option value="70">70 Kr.</option>
+                                                        <option value="80">80 Kr.</option>
+                                                        <option value="90">90 Kr.</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+
                                     <?php endif; ?>
-                                    <div class="clearfix"></div>
-                                    <hr>
-                                    <div class="col-md-12">
-                                        <?php if($modelProduct->salestype==2):?>
-                                        <div class="ihaleblok">
-                                            <?php else:?>
-                                            <div class="ihaleblok1">
-                                            <?php endif?>
-                                            <label class="text-center" for="inputEmail3">Adet</label>
-                                            <div class="quantity">
-                                                <input style="width: 50%" type="number" name="quantity" value="1" min="1" title="Qty" class="input-text qty text"/>
-                                            </div>
-                                        </div>
-                                        <?php if($modelProduct->salestype==2):?>
-
-                                        <div class="ihaleblok">
-                                            <label class="text-center" for="inputEmail3">Teklif ver</label>
-                                            <div class="tdinput">
-                                                <input type="text">
-                                                <select class="select-input1" id="">
-                                                    <option selected="selected" value="">00 Kr.</option>
-                                                    <option value="">10 Kr.</option>
-                                                    <option value="">20 Kr.</option>
-                                                    <option value="">30 Kr.</option>
-                                                    <option value="">40 Kr.</option>
-                                                    <option value="">50 Kr.</option>
-                                                    <option value="">60 Kr.</option>
-                                                    <option value="">70 Kr.</option>
-                                                    <option value="">80 Kr.</option>
-                                                    <option value="">90 Kr.</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <?php endif; ?>
-
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <hr>
+                                </table>
+                                <hr/>
 
                                     <?php if($modelProduct->salestype==2):?>
 
-                                    <button style="width: 100%;" type="submit" class="single_add_to_cart_button button">Teklif Ver
-                                    </button>
+                                        <a  class="button-radius btn-add-cart">Teklif Ver<span class="icon"></span>
+                                        </a>
+                                        <div class="clearfix"></div>
                                     <?php else: ?>
 
-                               
-                                    <button style="width: 100%;" type="submit" class="single_add_to_cart_button button">Teklif Sepetine Ekle
-                                    </button>
-
+                                        <a  class="button-radius btn-add-cart">Teklif Sepetine Ekle<span class="icon"></span>
+                                        </a>
+                                        <div class="clearfix"></div>
                                     <?php endif; ?>
+                                <hr/>
+                            </div>
+
+                            <div class="box-control-button">
+                                    <a title="Takip Listesine Ekle" class="link-wishlist" href="#">Takip Listesi</a>
+                                    <a title="Karşılaştırma Listesine Ekle" class="link-compare" href="#">Karşılaştır</a>
+                                    <a title="Satıcıya Mesaj Gönder" class="link-sendmail" href="#">Satıcıya Mesaj Gönder</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5">
+                        <!-- block  top sellers -->
+                        <div class="block block-top-sellers">
+                            <div class="block-head">
+                                <div class="block-title">
+                                    <div class="block-icon">
+                                        <img src="<?=Yii::app()->request->baseUrl;?>/front/data/top-seller-icon.png" alt="store icon">
+                                    </div>
+                                    <div class="block-title-text text-sm">Mağaza</div>
+                                    <div class="block-title-text text-sm">Bilgileri</div>
+                                </div>
+                            </div>
+                            <div class="block-inner">
+                                <div style="margin: 0;padding: 0;" class="col-md-3">
+                                    <span class="icon"><img class="img-responsive" src="<?=Yii::app()->request->baseUrl;?>/front/data/storeicon.png" alt="store icon"></span>
+
+                                </div>
+                                <div class="col-md-9">
+                                    <span class="company"><a href=""><?=$modelSupplierscompany->name?></a></span>
+
+                                    <div class="product-star">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
                                 </div>
 
                             </div>
-                        </div><!-- /.single-product-wrapper -->
-                    </div>
-
-                </div>
-
-
-                <div class="row">
-                    <div style="margin-top: -100px;" class="col-lg-12">
-                        <div class="woocommerce-tabs wc-tabs-wrapper">
-                            <ul class="nav nav-tabs electro-nav-tabs tabs wc-tabs" role="tablist">
-
-                                <li class="nav-item description_tab">
-                                    <a href="#tab-description" class="active" data-toggle="tab">Ürün Açıklaması</a>
-                                </li>
-
-                                <?php if($modelProduct->salestype==2):?>
-                                    <li class="nav-item specification_tab">
-                                        <a href="#tab-specification" data-toggle="tab">Teklif Verenler Listesi</a>
-                                    </li>
-                                <?php endif;?>
-
-                            </ul>
-
-                            <div class="tab-content">
-
-
-                                <div class="tab-pane active in panel entry-content wc-tab" id="tab-description">
-                                    <?=$modelProduct->text?>
-                                </div>
-
-                                <?php if($modelProduct->salestype==2):?>
-                                    <div class="tab-pane panel entry-content wc-tab" id="tab-specification">
-                                       
-                                    </div><!-- /.panel -->
-                                <?php endif;?>
-
+                            <div class="block-inner">
+                                <a style="width: 100%" class="btn btn-success" href="">Mağazaya Soru Sor</a>
                             </div>
-                        </div><!-- /.woocommerce-tabs -->
+                        </div>
+                        <!-- block  top sellers -->
+                    </div>
+                    <div  class="col-md-12">
+
                     </div>
                 </div>
-
-
-
-
-        </div><!-- /.product -->
-
-        </main><!-- /.site-main -->
-    </div><!-- /.content-area -->
-        <div style="background: #F8F8F8; border: 1px solid #e5e5e5;" class="col-md-12">
-
-            <a href="<?=Yii::app()->createUrl('products/productinformations')?>" class="btn btn-primary nextBtn btn-lg pull-left" type="button" >Geri Git</a>
-            <a onclick="productconfirm()" href="javascript:;" class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Onayla ve Yayına Al</a>
+            </div>
         </div>
-</div><!-- /.container -->
+    </div>
+    <div class="row">
+        <!-- Product tab -->
+        <div class="block block-tabs tab-left">
+            <div class="block-head">
+                <ul class="nav-tab">
+                    <li class="active"><a data-toggle="tab" href="#tab-1">Ürün Açıklaması</a></li>
+                </ul>
+            </div>
+            <div class="block-inner">
+                <div class="tab-container">
+                    <div id="tab-1" class="tab-panel active">
+                        <p>
+                            <?=$modelProduct->text?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product tab -->
+
+    </div>
+</div>
+
+    <div class="row setup-content" id="step-4">
+
+    </div>
+
+</div>
+
+    <div style="margin-top:20px; background: #F8F8F8; border: 1px solid #e5e5e5;" class="col-md-12">
+
+        <a href="<?=Yii::app()->createUrl('products/productinformations')?>" class="btn btn-primary nextBtn btn-lg pull-left" type="button" >Geri Git</a>
+        <a onclick="productconfirm()" href="javascript:;" class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Onayla ve Yayına Al</a>
+    </div>
+
+
+
+
     <div class="modal fade" id="scmodal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -229,19 +279,6 @@ $this->renderPartial("head");
     </div><!-- /.modal -->
 
 <script type="text/javascript">
-    $("#zoom_03").elevateZoom({
-        gallery:'gallery_01',
-        cursor: 'pointer',
-        galleryActiveClass: 'active',
-        imageCrossfade: true
-     });
-
-    $("#zoom_03").bind("click", function(e) {
-        var ez =   $('#zoom_03').data('elevateZoom');
-        $.fancybox(ez.getGalleryList());
-        return false;
-    });
-
 
 function productconfirm()
 {

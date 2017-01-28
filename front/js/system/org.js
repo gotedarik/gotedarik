@@ -713,6 +713,21 @@ function sendtenderoffer(id) {
 
 }
 
+function pup(){
+	var c = parseInt($("#count_number").val());
+	c++;
+    $("#count_number").val(c);
+}
+
+function pmin(){
+    var c = parseInt($("#count_number").val());
+    if(c>1){
+        c--;
+	}
+
+    $("#count_number").val(c);
+}
+
 function plus(id) {
 	var c = parseInt($("#t_count"+id+"").val());
 	c++;

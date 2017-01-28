@@ -55,10 +55,6 @@
         background: white;
     }
 
-    .mar1{
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
 
     .btn-primary{
         color: #fff;
@@ -139,8 +135,6 @@
         padding: 10px;
     }
     .img-box1{
-        max-width: 300px;
-        max-height: 300px;
         background: #FFFFFF;
         border: 1px solid #e5e5e5;
         padding: 5px;
@@ -167,13 +161,9 @@
         height: 100%;
     }
     .img-box-img-main{
-
-        width: 50%;
-        height: 50%;
         cursor: pointer;
         position: relative;
-        top:70px;
-        left: 100px;
+    margin: 0 auto;
     }
     .img-box-img-small{
         
@@ -219,23 +209,15 @@
         }
         .fileuproduct-main{
             outline: none;
+            margin-left: 120px;
             background: red;
             cursor: pointer;
             z-index: 9999;
-            width: 215px;
-            height: 170px;
             opacity:0;
-            margin-left: -60px;
-            margin-top: 60px;
         }
         .img-box-img-main{
-            
-            width: 50%;
-            height: 50%;
+            margin: 0 auto;
             cursor: pointer;
-            margin-left: -40px;
-            margin-top: 60px;
-        }
     }
     @media (min-width: 768px) and (max-width: 850px) {
         .fileuproduct-main{
@@ -245,7 +227,7 @@
             z-index: 9999;
             width: 215px;
             height: 170px;
-            opacity:0;
+            opacity:1;
             margin-left: -60px;
             margin-top: 60px;
         }

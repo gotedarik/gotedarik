@@ -39,7 +39,10 @@ if (!empty(Yii::app()->user->getState("user_id"))){
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/option3.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/custom2.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/front/js/jquery.maskMoney.js"></script>
+
     <?php Yii::app()->clientScript->registerCoreScript('jquery');?>
     <?php Yii::app()->clientScript->registerCoreScript('jquery.ui');?>
 
@@ -311,7 +314,7 @@ if (!empty(Yii::app()->user->getState("user_id"))){
 
                                                                         <li class="product-info <?=$value["code"];?>">
                                                                             <div class="p-left">
-                                                                                <a onclick="deleteofferitem(<?=$value["code"];?>)" title="Ürünü kaldır" class="remove_link"></a>
+                                                                                <a  style="cursor: pointer"  onclick="deleteofferitem(<?=$value["code"];?>)" title="Ürünü kaldır" class="remove_link"><i class="fa fa-times"></i></a>
                                                                                 <a href="<?=Yii::app()->createUrl("urun/view",array("id" =>Func::buildId($value["code"],$value["name"])))?>">
                                                                                     <img class="img-responsive" src="<?=$value["img"]?>" alt="Product">
                                                                                 </a>
@@ -560,7 +563,7 @@ if (!empty(Yii::app()->user->getState("user_id"))){
     </div>
 </footer>
 <!-- ./footer -->
-<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<a href="#" class="scroll_top" title="Yukarı Çık" style="display: inline;">Scroll</a>
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->request->baseUrl;?>/front/lib/owl.carousel/owl.carousel.min.js"></script>

@@ -20,7 +20,7 @@
                             <img src="<?=$arrimages[0]["imageXL"]?>" alt="Product" width="450" height="450" />
                         </a>
                     </div>
-                    <div class="text">Hover on the image to zoom</div>
+                    <div class="text">Resmi büyütmek için imleci üzerine götürün</div>
                     <div class="product-list-thumb">
                         <ul class="thumbnails kt-owl-carousel" data-margin="10" data-nav="true" data-responsive='{"0":{"items":2},"600":{"items":2},"1000":{"items":3}}'>
                             <?php foreach($arrimages as $key=>$value):?>
@@ -36,7 +36,7 @@
             </div>
             <div class="col-sm-7">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-12 col-md-7">
                         <div class="block-product-info">
                             <h2 class="product-name"><?=$modelProduct->name?></h2>
 
@@ -79,19 +79,44 @@
                                         <td class="table-label">Adet</td>
                                         <td class="table-value">
                                             <div class="box-qty">
-                                                <a href="#" class="quantity-minus">-</a>
-                                                <input type="text" class="quantity" value="1">
-                                                <a href="#" class="quantity-plus">+</a>
+                                                <button onclick="pmin();" class="quantity-minus">-</button>
+                                                <input type="text" class="quantity" id="count_number" name="quantity" value="1">
+                                                <button onclick="pup();" class="quantity-plus">+</button>
                                             </div>
                                         </td>
                                     </tr>
+
+                                    <tr>
+                                        <td class="table-label">Beden</td>
+                                        <td class="table-value">
+                                            <ul class="list-check-box">
+                                                <li><a href="#">39</a></li>
+                                                <li><a href="#">40</a></li>
+                                                <li><a href="#">41</a></li>
+                                                <li><a href="#">42</a></li>
+                                                <li><a href="#">43</a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                        <tr>
+                                            <td class="table-label">Renk</td>
+                                            <td class="table-value">
+                                                <ul class="list-check-box color">
+                                                    <li><a class="selected" href="#"><span style="background:#4d6dbd;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#fb5d5d;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#2fbcda;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#ffe00c;">Blue</span></a></li>
+                                                    <li><a href="#"><span style="background:#72b226;">Blue</span></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
                                     <?php endif; ?>
                                     <?php if(empty(Yii::app()->user->getState("supplier_id"))):?>
                                         <?php if($modelProduct->salestype==2):?>
                                             <tr>
                                                 <td class="table-label">Teklif ver</td>
-                                                <td style="width: 50%" class="table-value"><input id="offermainprice" type="text"></td>
                                                 <td class="table-value">
+                                                    <input id="offermainprice" class="select-input0" type="text">
                                                     <select class="select-input1" id="decimal">
                                                         <option selected="selected" value="00">00 Kr.</option>
                                                         <option value="10">10 Kr.</option>
@@ -105,6 +130,22 @@
                                                         <option value="90">90 Kr.</option>
                                                     </select>
                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <p class="text-center"><strong>İhale Bitimine Kalan Süre</strong></p>
+                                                <div class="form-group timer_background">
+                                                    <div class="col-sm-12">
+                                                        <div class="deal-countdown-timer center-block ">
+                                                            <div id="deal-countdown1" class="countdown">
+                                                                <span data-value="1" class="days"><span class="value ncolor" id="pro_day">1</span><b>GÜN</b></span>
+                                                                <span class="hours"><span class="value ncolor" id="pro_hour">7</span><b>Saat</b></span>
+                                                                <span class="minutes"><span class="value ncolor" id="pro_min">29</span><b>Dakika</b></span>
+                                                                <span class="seconds"><span class="value ncolor" id="pro_sec">13</span><b>Saniye</b></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
                                             </tr>
                                         <?php endif; ?>
                                     <?php endif; ?>
@@ -135,6 +176,43 @@
                                 <?php endif; ?>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5">
+                        <!-- block  top sellers -->
+                        <div class="block block-top-sellers">
+                            <div class="block-head">
+                                <div class="block-title">
+                                    <div class="block-icon">
+                                        <img src="<?=Yii::app()->request->baseUrl;?>/front/data/top-seller-icon.png" alt="store icon">
+                                    </div>
+                                    <div class="block-title-text text-sm">Mağaza</div>
+                                    <div class="block-title-text text-sm">Bilgileri</div>
+                                </div>
+                            </div>
+                            <div class="block-inner">
+                                <div style="margin: 0;padding: 0;" class="col-md-3">
+                                    <span class="icon"><img class="img-responsive" src="<?=Yii::app()->request->baseUrl;?>/front/data/storeicon.png" alt="store icon"></span>
+
+                                </div>
+                                <div class="col-md-9">
+                                    <span class="company"><a href="<?=Yii::app()->createUrl('sirket/urunler',array("id"=>Func::buildId($supinf->code,$modelSupplierscompany->name)))?>"><?=$modelSupplierscompany->name?></a></span>
+
+                                    <div class="product-star">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="block-inner">
+                                <a style="width: 100%" class="btn btn-success" href="">Mağazaya Soru Sor</a>
+                            </div>
+                        </div>
+                        <!-- block  top sellers -->
                     </div>
 
                 </div>
@@ -207,7 +285,6 @@
                             <div class="product-left">
                                 <div class="product-thumb">
                                     <a class="product-img" href="#"><img src="data/option1/p35.jpg" alt=""></a>
-                                    <a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
                                 </div>
                             </div>
                             <div class="product-right">
@@ -238,7 +315,6 @@
                             <div class="product-left">
                                 <div class="product-thumb">
                                     <a class="product-img" href="#"><img src="data/option1/p36.jpg" alt=""></a>
-                                    <a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
                                 </div>
                             </div>
                             <div class="product-right">
@@ -269,7 +345,6 @@
                             <div class="product-left">
                                 <div class="product-thumb">
                                     <a class="product-img" href="#"><img src="data/option1/p37.jpg" alt=""></a>
-                                    <a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
                                 </div>
                             </div>
                             <div class="product-right">
@@ -300,7 +375,6 @@
                             <div class="product-left">
                                 <div class="product-thumb">
                                     <a class="product-img" href="#"><img src="data/option1/p38.jpg" alt=""></a>
-                                    <a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
                                 </div>
                             </div>
                             <div class="product-right">
@@ -331,7 +405,6 @@
                             <div class="product-left">
                                 <div class="product-thumb">
                                     <a class="product-img" href="#"><img src="data/option1/p39.jpg" alt=""></a>
-                                    <a title="Quick View" href="#" class="btn-quick-view">Quick View</a>
                                 </div>
                             </div>
                             <div class="product-right">
@@ -366,3 +439,6 @@
 </div>
 
 
+<pre>
+                            <?php print_r($supinf); ?>
+                            </pre>

@@ -997,7 +997,7 @@
                                             </div>
 											<div class="product-left">
 												<div class="product-thumb">
-													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
+													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="<?=$value->name?>"></a>
 													
 												</div>
 											</div>

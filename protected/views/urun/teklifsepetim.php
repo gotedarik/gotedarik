@@ -59,6 +59,31 @@
 
 
 
+                            <?php endforeach; }else{
+                            $cookie = CookieBasket::getAll();
+                            foreach ($cookie as $key => $value) : ?>
+
+                            <tr id="<?=$value["code"];?>">
+                                <td class="cart_product">
+                                    <a href="<?= Yii::app()->createUrl("urun/view", array("id" => Func::buildId($value["code"],$value["name"]))) ?>" target="_blank"><img src="<?=$value["img"]?>" alt="<?=$value["name"]?>"></a>
+                                </td>
+                                <td class="cart_description">
+                                    <p class="product-name"><a href="<?= Yii::app()->createUrl("urun/view", array("id" => Func::buildId($value["code"], $value["name"]))) ?>" target="_blank"><?=$value["name"]?> </a></p>
+                                    <small class="cart_ref">Ürün Kodu : <?=$value["code"]?></small><br>
+                                </td>
+                                <td class="price"><span><?= number_format($value["price"], 2) ?>
+                                        &nbsp;<?= Params::getParams_("currency", $value["currency"]) ?></span></td>
+                                <td class="qty">
+                                    <input id="t_count<?= $value["code"] ?>" onchange="changepiece(<?=$value["code"] ?>)" class="form-control input-sm" type="text" value="<?=$value["params"]["piece"]?>">
+                                    <a style="cursor: pointer" onclick="plus(<?= $value["code"] ?>);"><i class="fa fa-caret-up plus"></i></a>
+                                    <a style="cursor: pointer" onclick="mins(<?= $value["code"] ?>);"><i class="fa fa-caret-down minus"></i></a>
+                                </td>
+                                <td class="action">
+                                    <a style="cursor: pointer;" onclick="deleteofferitem(<?= $value["code"] ?>)">Delete item</a>
+                                </td>
+                            </tr>
+
+
                             <?php endforeach; } ?>
                         </tbody>
 

@@ -5,11 +5,11 @@
                 <a href="<?=Yii::app()->createUrl("site/index")?>"><i class="fa fa-home"></i></a>
                 <span></span>
             </li>
-            <li>Teklif Detayı</li>
+            <li>Ürünlerim</li>
         </ul>
     </div>
     <div class="main-page">
-        <h1 class="page-title">Teklif Detayı</h1>
+        <h1 class="page-title">Ürünlerim</h1>
         <div class="page-content checkout-page">
             <div class="box-border">
 

@@ -121,16 +121,16 @@
     opacity:0;
 }
 .fileuproduct-main{
-    position: relative;
+    position: absolute;
     outline: none;
     background: red;
     cursor: pointer;
     z-index: 9999;
     width: 215px;
-    height: 170px;
-    left: 70px;
-    top:-100px;
+    height: 200px;
     opacity:0;
+    top: 35px;
+    left: 100px;
 }
 /* countdown */
 
@@ -168,3 +168,72 @@
     line-height: 0px;
 }
 /* indirim */
+
+.icon img{
+    width: 70px;
+    height: 50px;
+}
+
+.company{
+    margin-top: 5px;
+}
+
+/* countdown */
+/*=================================================================================*/
+.deal-countdown-timer,
+.deal-countdown-timer {
+    margin-bottom: 1em; }
+.deal-countdown-timer  .marketing-text,
+.deal-countdown-timer .marketing-text {
+    margin-bottom: 0.271em; }
+
+.deal-countdown-timer .countdown,
+.deal-countdown-timer .countdown {
+    text-align: center;
+    color: #383838; }
+.deal-countdown-timer .countdown span[data-value="0"],
+.deal-countdown-timer .countdown span[data-value="0"] {
+    display: none; }
+.deal-countdown-timer .countdown > span,
+.deal-countdown-timer .countdown > span {
+    display: inline-block;
+    margin: 0 1px; }
+.deal-countdown-timer .countdown > span:last-child .value::after,
+.deal-countdown-timer .countdown > span:last-child .value::after {
+    content: none; }
+.deal-countdown-timer .countdown > span .value {
+    font-size: 20px;
+    line-height: 1.367em;
+    width: 35px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #e6e6e6;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.deal-countdown-timer .countdown > span .value::after,
+.section-onsale-product-carousel .onsale-product .countdown > span .value::after {
+    content: ':';
+    display: inline-block;
+    position: absolute;
+    right: -5px;
+    font-size: 0.8em;
+    line-height: 1.708em; }
+.deal-countdown-timer .countdown > span b,
+.deal-countdown-timer .countdown > span b {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.857em;
+    text-transform: uppercase;
+    line-height: 1em; }
+/*=================================================================================*/
+.select-input0{
+    float: left;
+    width: 150px;
+}
+.select-input1{
+    float: left;
+    width: 100px;
+}

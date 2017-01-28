@@ -2324,9 +2324,10 @@ a{
 	border: none;
 	padding: 10px 0;
 	vertical-align: middle;
+	width: 100%;
 }
 .block-product-info .variations-table .table-label{
-	width: 65px;
+	width: 75px;
 }
 .block-product-info .variations-box .list-check-box{
 	padding: 0;
