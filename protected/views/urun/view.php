@@ -437,8 +437,3 @@
 
     </div>
 </div>
-
-
-<pre>
-                            <?php print_r($supinf); ?>
-                            </pre>

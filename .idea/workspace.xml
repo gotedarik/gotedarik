@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ff008f3-ccf4-406a-a21a-7e31730e83d1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" afterPath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/view.php" afterPath="$PROJECT_DIR$/protected/views/urun/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="211" column="192" lean-forward="false" selection-start-line="211" selection-start-column="192" selection-end-line="211" selection-end-column="192" />
+            <state relative-caret-position="448">
+              <caret line="439" column="0" lean-forward="true" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -378,12 +377,12 @@
       <workItem from="1484752860292" duration="14639000" />
       <workItem from="1484935118911" duration="11466000" />
       <workItem from="1485540794831" duration="7959000" />
-      <workItem from="1485592931134" duration="9739000" />
+      <workItem from="1485592931134" duration="9849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44647000" />
+    <option name="totallyTimeSpent" value="44757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="681" extended-state="6" />
@@ -877,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="211" column="192" lean-forward="false" selection-start-line="211" selection-start-column="192" selection-end-line="211" selection-end-column="192" />
+        <state relative-caret-position="448">
+          <caret line="439" column="0" lean-forward="true" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
           <folding />
         </state>
       </provider>
