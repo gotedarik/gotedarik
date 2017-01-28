@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ff008f3-ccf4-406a-a21a-7e31730e83d1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/custom.css" afterPath="$PROJECT_DIR$/front/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/css/style.css" afterPath="$PROJECT_DIR$/front/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front/js/system/org.js" afterPath="$PROJECT_DIR$/front/js/system/org.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/protected/controllers/ProductsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/UrunController.php" afterPath="$PROJECT_DIR$/protected/controllers/UrunController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.2" afterPath="$PROJECT_DIR$/protected/runtime/application.log.2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.3" afterPath="$PROJECT_DIR$/protected/runtime/application.log.3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.4" afterPath="$PROJECT_DIR$/protected/runtime/application.log.4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.5" afterPath="$PROJECT_DIR$/protected/runtime/application.log.5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" afterPath="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/head.php" afterPath="$PROJECT_DIR$/protected/views/products/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/list.php" afterPath="$PROJECT_DIR$/protected/views/products/list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/productinformations.php" afterPath="$PROJECT_DIR$/protected/views/products/productinformations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/productinformations/productimages.php" afterPath="$PROJECT_DIR$/protected/views/products/productinformations/productimages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/products/productreview.php" afterPath="$PROJECT_DIR$/protected/views/products/productreview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/sirket/leftinformations.php" afterPath="$PROJECT_DIR$/protected/views/sirket/leftinformations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/sirket/view.php" afterPath="$PROJECT_DIR$/protected/views/sirket/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" afterPath="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/urun/view.php" afterPath="$PROJECT_DIR$/protected/views/urun/view.php" />
     </list>
@@ -45,8 +25,30 @@
       <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="197" column="148" lean-forward="false" selection-start-line="197" selection-start-column="148" selection-end-line="197" selection-end-column="148" />
+            <state relative-caret-position="375">
+              <caret line="211" column="192" lean-forward="false" selection-start-line="211" selection-start-column="192" selection-end-line="211" selection-end-column="192" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="teklifsepetim.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/urun/teklifsepetim.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
+              <folding>
+                <marker date="1485603310389" expanded="true" signature="1320:1339" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leftinformations.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/sirket/leftinformations.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="43" column="141" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="141" />
               <folding />
             </state>
           </provider>
@@ -95,7 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addf</find>
       <find>urunka</find>
       <find>deleteoffer</find>
       <find>sizin içi</find>
@@ -125,6 +126,7 @@
       <find>&lt;a title=&quot;Quick View&quot; href=&quot;#&quot; class=&quot;btn-quick-view&quot;&gt;Quick View&lt;/a&gt;</find>
       <find>Buy</find>
       <find>suppliersinf</find>
+      <find>teklifleri</find>
     </findStrings>
     <replaceStrings>
       <replace>İncele</replace>
@@ -146,7 +148,6 @@
         <option value="$PROJECT_DIR$/protected/controllers/UrunController.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/products/head.php" />
-        <option value="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
         <option value="$PROJECT_DIR$/front/js/system/org.js" />
         <option value="$PROJECT_DIR$/protected/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/protected/views/products/productinformations.php" />
@@ -158,6 +159,7 @@
         <option value="$PROJECT_DIR$/protected/views/layouts/frontLayout/frontlayout.php" />
         <option value="$PROJECT_DIR$/protected/views/sirket/leftinformations.php" />
         <option value="$PROJECT_DIR$/protected/views/sirket/view.php" />
+        <option value="$PROJECT_DIR$/protected/views/urun/teklifsepetim.php" />
         <option value="$PROJECT_DIR$/protected/views/urun/view.php" />
       </list>
     </option>
@@ -296,7 +298,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../organizetedarik" />
-    <property name="SearchEverywhereHistoryKey" value="sirk&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/SirketController.php&#10;site/in&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;uruncon&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/UrunController.php&#10;urun/vi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;site/index&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;index&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;globa&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/global.css&#10;style.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;cu&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;produ&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/products/productreview.php&#10;site/inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;cust&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;layou&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;cus&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;tek&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;fro&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/UrunController.php&#10;eklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;sirk&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/SirketController.php&#10;site/in&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;uruncon&#9;FILE&#9;file:///var/www/html/gotedarik/protected/controllers/UrunController.php&#10;urun/vi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;site/index&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;index&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;fron&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;globa&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/global.css&#10;style.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;cu&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;produ&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/products/productreview.php&#10;site/inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;cust&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;layou&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;cus&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;front&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;or&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;tek&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;org.&#9;FILE&#9;file:///var/www/html/gotedarik/front/js/system/org.js&#10;fro&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/layouts/frontLayout/frontlayout.php&#10;custom.c&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css&#10;view&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/view.php&#10;ind&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;inde&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/site/index.php&#10;urun&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;teklif&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/teklifsepetim.php&#10;urunkar&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/urunkarsilastir.php&#10;styl&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/style.css&#10;takiplistesi&#9;FILE&#9;file:///var/www/html/gotedarik/protected/views/urun/takiplistesi.php&#10;custom.&#9;FILE&#9;file:///var/www/html/gotedarik/front/css/custom.css" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -376,12 +378,12 @@
       <workItem from="1484752860292" duration="14639000" />
       <workItem from="1484935118911" duration="11466000" />
       <workItem from="1485540794831" duration="7959000" />
-      <workItem from="1485592931134" duration="8963000" />
+      <workItem from="1485592931134" duration="9739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43871000" />
+    <option name="totallyTimeSpent" value="44647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="681" extended-state="6" />
@@ -739,16 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/urun/teklifsepetim.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <marker date="1485544441916" expanded="true" signature="1320:1339" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -803,14 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="3294" column="0" lean-forward="true" selection-start-line="3294" selection-start-column="0" selection-end-line="3294" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/sirket/leftinformations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -873,10 +857,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/urun/teklifsepetim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="95" column="80" lean-forward="false" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
+          <folding>
+            <marker date="1485603310389" expanded="true" signature="1320:1339" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/sirket/leftinformations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="43" column="141" lean-forward="true" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="141" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/urun/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="197" column="148" lean-forward="false" selection-start-line="197" selection-start-column="148" selection-end-line="197" selection-end-column="148" />
+        <state relative-caret-position="375">
+          <caret line="211" column="192" lean-forward="false" selection-start-line="211" selection-start-column="192" selection-end-line="211" selection-end-column="192" />
           <folding />
         </state>
       </provider>

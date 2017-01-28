@@ -209,7 +209,7 @@
                             </div>
 
                             <div class="block-inner">
-                                <a style="width: 100%" class="btn btn-success" href="">Mağazaya Soru Sor</a>
+                                <a style="width: 100%" class="btn btn-success" href="<?=Yii::app()->createUrl("sirket/mesajyaz",array("id" => Func::buildId($supinf->code,$modelSupplierscompany->name)))?>">Mağazaya Soru Sor</a>
                             </div>
                         </div>
                         <!-- block  top sellers -->

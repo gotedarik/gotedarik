@@ -93,7 +93,7 @@
                             <a onclick="clearOfferbasket();" style="background: red;color: white" class="button pull-left"><i class="fa fa-trash">&nbsp;&nbsp;</i>Tümünü Temizle</a>
                         </div>
                         <div class="col-md-6">
-                            <a class="button pull-right">Teklifleri gönder</a>
+                            <a class="button pull-right" onclick="sendoffers();">Teklifleri gönder</a>
                         </div>
 
 
