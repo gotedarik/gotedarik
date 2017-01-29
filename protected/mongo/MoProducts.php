@@ -231,9 +231,7 @@ class MoProducts extends MongoDBa
 
 		foreach($get as $key=>$value)
 		{
-			self::$table->delete(array(
-				"_id"=>$value->_id,
-			));
+			$this->remove((string)$value["_id"]);
 		}
 		
 
@@ -245,6 +243,14 @@ class MoProducts extends MongoDBa
 		}
 	}
 
+	public function remove($id)
+	{
+		$realmongoid = new MongoId($id);
+
+		$where = array('_id' => $realmongoid); 
+		
+		return self::$table->remove($where);
+	}
 
 	public function buildArr($model)
 	{
