@@ -9,23 +9,23 @@ class MongoDBa
 
 	private static $conn=false;
 
-	public static $sellectDB;
-
-	public static $collection;
-
-	private static $table;
-
 	private function mongoInit()
 	{
 		
 		$seeds='mongodb://'.Yii::app()->params["mongodb"]["username"].':'.Yii::app()->params["mongodb"]["password"].'@localhost:27017/'.Yii::app()->params["mongodb"]["db"];
-		
-		//$options=Yii::app()->params["mongodb"];
 
+		$options=array();
+		/*
+		$options=array(
+			'username' => Yii::app()->params["mongodb"]["username"],
+		    'password' => Yii::app()->params["mongodb"]["password"],
+		    'db'       => Yii::app()->params["mongodb"]["db"]
+		);
+		*/
 
-		self::$mongo=$this->getMongoClient($seeds);
-			
-		self::$table = new Mongomodel(self::$mongo);
+		self::$mongo=$this->getMongoClient($seeds,$options);
+	
+
 	}
 
 	private function getMongoClient($seeds = "", $options = array(), $retry = 7) {
@@ -33,7 +33,7 @@ class MongoDBa
 	    try {
 
 	    	self::$conn=true;
-	        return new MongoDB\Driver\Manager($seeds, $options);
+	        return new MongoClient($seeds, $options);
 
 	    } catch(MongoConnectionException $e) {
 
@@ -56,7 +56,7 @@ class MongoDBa
 
  
 
-	public function setMongo($dbname,$collection)
+	public function getMongo($dbname)
 	{
 		
 		if(!self::$conn)
@@ -64,14 +64,16 @@ class MongoDBa
 			$this->mongoInit();
 		}
 
-		self::$sellectDB=$dbname;
+		if(isset(self::$mongo) && self::$mongo!=null)
+		{
+			$mongo=self::$mongo->selectDB($dbname);
+			if($mongo==$dbname)
+			{
+				return $mongo;
+			}
+		}
 		
-		self::$collection=$collection;
-
-		return self::$table;
+		
 
 	}
-
-	
-
 }

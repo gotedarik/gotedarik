@@ -105,7 +105,7 @@ function nextstep()
             if(data.sonuc==1)
             {
 
-               window.location=params.site+"/products/salestype";
+               window.location=params.site+"/products/productinformations";
 
             }else{
 

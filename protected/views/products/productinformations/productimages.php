@@ -29,6 +29,7 @@
 
     </p>
 
+    <div class="clear"></div>
     <p id="product_images_error" class="error_system"></p>
 </div>
 

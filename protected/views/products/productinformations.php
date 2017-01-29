@@ -329,7 +329,7 @@ $this->renderPartial("head");
                         <hr>
                     </div>
                 </div>
-                <a href="<?=Yii::app()->createUrl('products/salestype')?>" class="btn btn-primary nextBtn btn-lg pull-left" type="button" >Geri Git</a>
+                <a href="<?=Yii::app()->createUrl('products/newproduct')?>" class="btn btn-primary nextBtn btn-lg pull-left" type="button" >Geri Git</a>
                 <a href="javascript:;" onclick="productinformationsUpdate()" class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Önizleme ve Onay</a>            </div>
         </div>
     </div>
@@ -341,7 +341,6 @@ $this->renderPartial("head");
 
 <script type="text/javascript">
 initEditor('product_comments');
-
 
 function masMonk()
 {
@@ -424,6 +423,7 @@ function productinformationsUpdate()
 {
     var control=true;
 
+    console.log(lastshowday);
     
     $('#product_name_error').html("");
     $('#product_subtitle_error').html("");

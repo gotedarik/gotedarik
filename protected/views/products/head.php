@@ -326,6 +326,7 @@
                 <p>Kategori Seçimi</p>
             </div>
 
+            <!--
             <div class="stepwizard-step">
                 <?php
 
@@ -338,14 +339,15 @@
                 ?>
                 <p>Ürün Satış Şekli</p>
             </div>
+            -->
 
             <div class="stepwizard-step">
                 <?php
 
                 if(Yii::app()->controller->action->id == 'productinformations'){
-                    echo "<span class=\"btn btn-primary btn-circle\" disabled=\"disabled\">3</span>";
+                    echo "<span class=\"btn btn-primary btn-circle\" disabled=\"disabled\">2</span>";
                 }else{
-                     echo '<a href="'.($butondisabled==false?Yii::app()->createUrl("products/productinformations"):"javascript:;").'" type="button" class="btn btn-default btn-circle ">3</a>';
+                     echo '<a href="'.($butondisabled==false?Yii::app()->createUrl("products/productinformations"):"javascript:;").'" type="button" class="btn btn-default btn-circle ">2</a>';
                 }
 
                 ?>
@@ -356,9 +358,9 @@
                 <?php
 
                 if(Yii::app()->controller->action->id == 'productreview'){
-                    echo "<span class=\"btn btn-primary btn-circle\" disabled=\"disabled\">4</span>";
+                    echo "<span class=\"btn btn-primary btn-circle\" disabled=\"disabled\">3</span>";
                 }else{
-                    echo '<a href="'.($butondisabled==false?Yii::app()->createUrl("products/productreview"):"javascript:;").'" type="button" class="btn btn-default btn-circle ">4</a>';
+                    echo '<a href="'.($butondisabled==false?Yii::app()->createUrl("products/productreview"):"javascript:;").'" type="button" class="btn btn-default btn-circle ">3</a>';
                 }
 
                 ?>

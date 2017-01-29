@@ -6,9 +6,9 @@ class MoProducts extends MongoDBa
 
 	private static $tablename="products";
 
-	private static $db;
-
 	private static $table;
+
+	private static $db;
 
 	private $int=array("products_id","suppliers_id","productgroup_id","deleted","admindeleted","status","salestype","cargopricetype","cargoprice","price","lastshowday","lastbidday","piece","startingprice","viewed","code","discount","currency","totalpoint","uservotecount","viewok","lastbidprice");
 
@@ -17,8 +17,9 @@ class MoProducts extends MongoDBa
 	public function __construct()
 	{
 
-		self::$table=$this->setMongo(self::$dbname,self::$tablename);
+		self::$db=$this->getMongo(self::$dbname);
 
+		self::$table = new MongoCollection(self::$db, self::$tablename);
 
 	}
 
@@ -31,7 +32,7 @@ class MoProducts extends MongoDBa
 
 	public function searchmain($text)
 	{
-		$where = array('$text' => array('$search'=>$text),'viewok'=>1,"lastshowdates"=>array('$gt'=>new MongoDB\BSON\UTCDateTime(time()*1000))); 
+		$where = array('$text' => array('$search'=>$text),'viewok'=>1,"lastshowdates"=>array('$gt'=>new MongoDate(time()))); 
 
 		$list=self::$table->aggregate(array(
 		    array('$match'=>$where),
@@ -86,11 +87,11 @@ class MoProducts extends MongoDBa
 
 
 	     $where["viewok"] = 1;
-	     $where["lastshowdates"] =array('$gt'=>new MongoDB\BSON\UTCDateTime(time()*1000));
+	     $where["lastshowdates"] =array('$gt'=>new MongoDate(time()));
 	    
 	     if($searchcontrol==false)
 	     {
-	     	 $where = array("viewok"=>1,"lastshowdates"=>array('$gt'=>new MongoDB\BSON\UTCDateTime(time()*1000))); 
+	     	 $where = array("viewok"=>1,"lastshowdates"=>array('$gt'=>new MongoDate(time()))); 
 	     }
 		
 		if($skip==0 && isset($arr["product_id"]) && !empty($arr["product_id"]))
@@ -201,31 +202,6 @@ class MoProducts extends MongoDBa
 	}
 
 
-	public function buildArr($model)
-	{
-		$arr=array();
-
-		foreach($model as $key=>$value)
-		{
-			if(in_array($key,$this->int))
-			{
-				$arr[$key]=$value+0;;
-				
-			}elseif(in_array($key,$this->datetime)){
-				$arr[$key]=new MongoDB\BSON\UTCDateTime(strtotime($value)*1000);
-			}else{
-				$arr[$key]=$value;
-			}
-
-
-		}
-
-		$arr["productgroup_name"]=Func::getProductgroup($model->productgroup_id)->name;
-		$arr["imageS"]=$this->getImages($model->products_id);
-
-		return $arr;
-	}
-
 	public function getImages($products_id)
 	{
 
@@ -268,5 +244,32 @@ class MoProducts extends MongoDBa
 			$this->insert($this->buildArr($value));
 		}
 	}
+
+
+	public function buildArr($model)
+	{
+		$arr=array();
+
+		foreach($model as $key=>$value)
+		{
+			if(in_array($key,$this->int))
+			{
+				$arr[$key]=$value+0;;
+				
+			}elseif(in_array($key,$this->datetime)){
+				$arr[$key]=new MongoDate(strtotime($value));
+			}else{
+				$arr[$key]=$value;
+			}
+
+
+		}
+
+		$arr["productgroup_name"]=Func::getProductgroup($model->productgroup_id)->name;
+		$arr["imageS"]=$this->getImages($model->products_id);
+
+		return $arr;
+	}
+
 
 }

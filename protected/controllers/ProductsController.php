@@ -114,11 +114,12 @@ class ProductsController extends Controller
 			$this->redirect(array("newproduct"));
 		}
 
+		/*
 		if(empty(Yii::app()->user->getState("salestype")))
 		{
 			$this->redirect(array("salestype"));
 		}
-
+		*/
 
 		$modelProduct=$this->loadModel(Yii::app()->user->getState("products_id"));
 
@@ -385,11 +386,12 @@ class ProductsController extends Controller
 			$this->redirect(array("newproduct"));
 		}
 
-
+		/*
 		if(empty(Yii::app()->user->getState("salestype")))
 		{
 			$this->redirect(array("salestype"));
 		}
+		*/
 
 		$criteria=new CDbCriteria;
 		$criteria->condition = "products_id=:products_id";
@@ -437,13 +439,18 @@ class ProductsController extends Controller
 
 	public function actionSalestypebuild()
 	{
+		/*
 		if(empty(Yii::app()->user->getState("salestype")))
 		{
 			$this->redirect(array("salestype"));
 		}else{
 			$this->redirect(array("productinformations"));
 		}
+		*/
+		$this->redirect(array("productinformations"));
 	}
+
+	/*
 
 	public function actionSalestypeset()
 	{
@@ -475,6 +482,7 @@ class ProductsController extends Controller
 		}
 	}
 
+
 	public function actionSalestype()
 	{
 
@@ -488,6 +496,7 @@ class ProductsController extends Controller
 			$this->render("salestype");
 		}
 	}
+	*/
 
 	public function actionCreateproduct()
 	{
@@ -507,6 +516,7 @@ class ProductsController extends Controller
 				$model->viewed=0;
 				$model->totalpoint=0;
 				$model->uservotecount=0;
+				$model->salestype=1;
 				$model->viewok=0;
 			}else{
 				$model=$this->loadModel(Yii::app()->user->getState("products_id"));
@@ -601,8 +611,8 @@ class ProductsController extends Controller
 				{
 
 					$arr[]=array(
-						"key"=>$value->productgroup_id,
-						"value"=>$value->name,
+						"key"=>$value["productgroup_id"],
+						"value"=>$value["name"],
 					);
 				}
 				
@@ -649,6 +659,8 @@ class ProductsController extends Controller
 				}
 			}
 		}
+
+		Yii::app()->user->setState("salestype",1);
 
 		$this->render("newproduct",array(
 			"productgroup_idarr"=>$productgroup_idarr,

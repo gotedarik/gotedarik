@@ -1,5 +1,6 @@
 {
     "require": {
         "aws/aws-sdk-php": "2.*",
+        "alcaeus/mongo-php-adapter": "^1.0"
     }
 }

@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Mongo' => array($vendorDir . '/alcaeus/mongo-php-adapter/lib/Mongo'),
     'Guzzle\\Tests' => array($vendorDir . '/guzzle/guzzle/tests'),
     'Guzzle' => array($vendorDir . '/guzzle/guzzle/src'),
     'Aws' => array($vendorDir . '/aws/aws-sdk-php/src'),

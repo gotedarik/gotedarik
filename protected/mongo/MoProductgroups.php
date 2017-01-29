@@ -1,5 +1,6 @@
 <?php
 
+
 class MoProductgroups extends MongoDBa
 {
 	private static $dbname="gotedarik";
@@ -14,12 +15,12 @@ class MoProductgroups extends MongoDBa
 
 	private $datetime=array("dateadd");
 
-
 	public function __construct()
 	{
 
-		self::$table=$this->setMongo(self::$dbname,self::$tablename);
+		self::$db=$this->getMongo(self::$dbname);
 
+		self::$table = new MongoCollection(self::$db, self::$tablename);
 
 	}
 
@@ -30,16 +31,49 @@ class MoProductgroups extends MongoDBa
 
 	}
 
-	public function search($str)
-	{
-		 $where = array('name' =>  new MongoDB\BSON\Regex ( '^'.$str,'i'),"status"=>1); 
-		 return self::$table->find($where);
-	}
-
 	public function update($id,$arr)
 	{
 		$where=array("productgroup_id"=>$id);
 		self::$table->update($where,array('$set'=>$arr));
+	}
+
+
+	public function search($str)
+	{
+		 $where = array('name' =>  new MongoRegex('/^'.$str.'/i'),"status"=>1); 
+		 return self::$table->find($where);
+	}
+
+
+	public function remove($id)
+	{
+		$realmongoid = new MongoId($id);
+
+		$where = array('_id' => $realmongoid); 
+		
+		return self::$table->remove($where);
+	}
+
+	public function re()
+	{
+		
+		$get=self::$table->find();
+
+		
+		foreach($get as $key=>$value)
+		{
+
+			$this->remove((string)$value["_id"]);
+			
+		}
+		
+
+		$model=Productgroup::model()->findAll();
+
+		foreach($model as $key=>$value)
+		{
+			$this->insert($this->buildArr($value));
+		}
 	}
 
 
@@ -51,38 +85,16 @@ class MoProductgroups extends MongoDBa
 		{
 			if(in_array($key,$this->int))
 			{
-				$arr[$key]=$value+0;;
+				$arr[$key]=$value+0;
 				
 			}elseif(in_array($key,$this->datetime)){
-				$arr[$key]=new MongoDB\BSON\UTCDateTime(strtotime($value)*1000);
+				$arr[$key]=new MongoDate(strtotime($value));
 			}else{
 				$arr[$key]=$value;
 			}
 		}
 
 		return $arr;
-	}
-
-
-	public function re()
-	{
-		
-		$get=self::$table->find();
-
-		foreach($get as $key=>$value)
-		{
-			self::$table->delete(array(
-				"_id"=>$value->_id,
-			));
-		}
-		
-
-		$model=Productgroup::model()->findAll();
-
-		foreach($model as $key=>$value)
-		{
-			$this->insert($this->buildArr($value));
-		}
 	}
 
 }

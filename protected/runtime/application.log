@@ -6877,3 +6877,1347 @@ Stack trace:
 REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
 HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
 ---
+2017/01/29 10:58:40 [error] [exception.ParseError] ParseError: syntax error, unexpected 'new' (T_NEW) in /var/www/html/gotedarik/protected/mongo/MoProductgroups.php:39
+Stack trace:
+#0 [internal function]: YiiBase::autoload('MoProductgroups')
+#1 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(493): spl_autoload_call('MoProductgroups')
+#2 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#3 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#12 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#13 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#15 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 10:58:57 [error] [exception.Error] Error: Class 'Smce\Sm' not found in /var/www/html/gotedarik/protected/mongoadapter/MongoDBa.php:15
+Stack trace:
+#0 /var/www/html/gotedarik/protected/mongoadapter/MongoDBa.php(62): MongoDBa->mongoInit()
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(17): MongoDBa->getMongo('gotedarik')
+#2 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(493): MoProductgroups->__construct()
+#3 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:02:17 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:07:45 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:09:13 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:10:59 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:12:55 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:12:56 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(49): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:16:26 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(50): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(50): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:17:26 [error] [exception.Error] Error: Call to undefined method MoProductgroups::buildArr() in /var/www/html/gotedarik/protected/mongo/MoProductgroups.php:53
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#1 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#2 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#11 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#12 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#14 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:18:13 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(50): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(50): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:18:14 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(50): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(50): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:18:31 [error] [exception.Error] Error: Call to undefined method MoProductgroups::buildArr() in /var/www/html/gotedarik/protected/mongo/MoProductgroups.php:54
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#1 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#2 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#11 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#12 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#14 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:22:05 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(59): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(59): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:22:06 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(59): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(59): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:27:28 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php:180
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/Find.php(180): MongoDB\Driver\Server->executeQuery('gotedarik.produ...', Object(MongoDB\Driver\Query), Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(444): MongoDB\Operation\Find->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(166): MongoDB\Collection->find(Array, Array)
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#4 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#5 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#6 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(60): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#7 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#8 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#9 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#18 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#19 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#21 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(170): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCursor.php(443): MongoCursor->doQuery()
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(297): MongoCursor->ensureCursor()
+#3 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/AbstractCursor.php(190): Alcaeus\MongoDbAdapter\AbstractCursor->ensureIterator()
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(60): Alcaeus\MongoDbAdapter\AbstractCursor->rewind()
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:28:34 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:28:56 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:28:57 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:28:58 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:31:01 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:38:01 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:40:47 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:40:54 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:51:04 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:51:05 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\AuthenticationException: Authentication failed. in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php:86
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Operation/InsertOne.php(86): MongoDB\Driver\Server->executeBulkWrite('gotedarik.produ...', Object(MongoDB\Driver\BulkWrite), Object(MongoDB\Driver\WriteConcern))
+#1 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(639): MongoDB\Operation\InsertOne->execute(Object(MongoDB\Driver\Server))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(292): MongoDB\Collection->insertOne(Object(MongoDB\Model\BSONDocument), Array)
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: Authentication failed. in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:83
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(295): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\AuthenticationException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(58): MoProductgroups->insert(Array)
+#3 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#4 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#5 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#14 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#15 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#17 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:53:59 [error] [exception.CException] CException: "Productgroup._id" özelliği tanımlanmamıştır. in /var/www/html/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/framework/db/ar/CActiveRecord.php(161): CComponent->__set('_id', Object(MongoId))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(1010): CActiveRecord->__set('_id', Object(MongoId))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(280): MongoCollection->ensureDocumentHasMongoId(Object(Productgroup))
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Object(Productgroup))
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(73): MoProductgroups->insert(Object(Productgroup))
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:55:01 [error] [php] Trying to get property of non-object (/var/www/html/gotedarik/protected/mongo/MoProductgroups.php:62)
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/html/framework/web/filters/CFilterChain.php(133): ProductgroupController->runAction()
+#2 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#4 /var/www/html/framework/web/filters/CInlineFilter.php(58): ProductgroupController->filterAccessControl()
+#5 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#6 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(265): ProductgroupController->runActionWithFilters()
+#8 /var/www/html/framework/web/CWebApplication.php(282): ProductgroupController->run()
+#9 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/gotedarik/index.php(21): CWebApplication->run()
+REQUEST_URI=/gotedarik/productgroup/re
+in /var/www/html/gotedarik/protected/mongo/MoProductgroups.php (62)
+in /var/www/html/gotedarik/protected/controllers/ProductgroupController.php (494)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 11:55:22 [error] [exception.CException] CException: "Productgroup._id" özelliği tanımlanmamıştır. in /var/www/html/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/framework/db/ar/CActiveRecord.php(161): CComponent->__set('_id', Object(MongoId))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(1010): CActiveRecord->__set('_id', Object(MongoId))
+#2 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(280): MongoCollection->ensureDocumentHasMongoId(Object(Productgroup))
+#3 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(26): MongoCollection->insert(Object(Productgroup))
+#4 /var/www/html/gotedarik/protected/mongo/MoProductgroups.php(72): MoProductgroups->insert(Object(Productgroup))
+#5 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#6 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:56:59 [error] [exception.Error] Error: Call to undefined function buildArr() in /var/www/html/gotedarik/protected/mongo/MoProductgroups.php:71
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/ProductgroupController.php(494): MoProductgroups->re()
+#1 /var/www/html/framework/web/actions/CInlineAction.php(49): ProductgroupController->actionRe()
+#2 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/framework/web/CWebApplication.php(282): CController->run('re')
+#11 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('productgroup/re')
+#12 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#14 {main}
+REQUEST_URI=/gotedarik/productgroup/re
+---
+2017/01/29 11:59:31 [warning] [application] Failed to set unsafe attribute "image" of "Productgroup".
+in /var/www/html/gotedarik/protected/controllers/ProductgroupController.php (70)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 11:59:37 [warning] [application] Failed to set unsafe attribute "image" of "Productgroup".
+in /var/www/html/gotedarik/protected/controllers/ProductgroupController.php (70)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 12:06:37 [error] [php] Trying to get property of non-object (/var/www/html/gotedarik/protected/controllers/ProductsController.php:604)
+Stack trace:
+#0 /var/www/html/framework/web/filters/CFilterChain.php(133): ProductsController->runAction()
+#1 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/framework/web/filters/CInlineFilter.php(58): ProductsController->filterAccessControl()
+#4 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/framework/web/CController.php(265): ProductsController->runActionWithFilters()
+#7 /var/www/html/framework/web/CWebApplication.php(282): ProductsController->run()
+#8 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/gotedarik/index.php(21): CWebApplication->run()
+REQUEST_URI=/gotedarik/products/searchgroups?term=se
+in /var/www/html/gotedarik/protected/controllers/ProductsController.php (604)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 12:06:38 [error] [php] Trying to get property of non-object (/var/www/html/gotedarik/protected/controllers/ProductsController.php:604)
+Stack trace:
+#0 /var/www/html/framework/web/filters/CFilterChain.php(133): ProductsController->runAction()
+#1 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/framework/web/filters/CInlineFilter.php(58): ProductsController->filterAccessControl()
+#4 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/framework/web/CController.php(265): ProductsController->runActionWithFilters()
+#7 /var/www/html/framework/web/CWebApplication.php(282): ProductsController->run()
+#8 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/gotedarik/index.php(21): CWebApplication->run()
+REQUEST_URI=/gotedarik/products/searchgroups?term=seb
+in /var/www/html/gotedarik/protected/controllers/ProductsController.php (604)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 12:06:42 [error] [php] Trying to get property of non-object (/var/www/html/gotedarik/protected/controllers/ProductsController.php:604)
+Stack trace:
+#0 /var/www/html/framework/web/filters/CFilterChain.php(133): ProductsController->runAction()
+#1 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/framework/web/filters/CInlineFilter.php(58): ProductsController->filterAccessControl()
+#4 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/framework/web/CController.php(265): ProductsController->runActionWithFilters()
+#7 /var/www/html/framework/web/CWebApplication.php(282): ProductsController->run()
+#8 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/gotedarik/index.php(21): CWebApplication->run()
+REQUEST_URI=/gotedarik/products/searchgroups?term=seb
+in /var/www/html/gotedarik/protected/controllers/ProductsController.php (604)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 12:06:49 [error] [php] Trying to get property of non-object (/var/www/html/gotedarik/protected/controllers/ProductsController.php:604)
+Stack trace:
+#0 /var/www/html/framework/web/filters/CFilterChain.php(133): ProductsController->runAction()
+#1 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/framework/web/filters/CInlineFilter.php(58): ProductsController->filterAccessControl()
+#4 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/framework/web/CController.php(265): ProductsController->runActionWithFilters()
+#7 /var/www/html/framework/web/CWebApplication.php(282): ProductsController->run()
+#8 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/gotedarik/index.php(21): CWebApplication->run()
+REQUEST_URI=/gotedarik/products/searchgroups?term=s
+in /var/www/html/gotedarik/protected/controllers/ProductsController.php (604)
+in /var/www/html/gotedarik/index.php (21)
+2017/01/29 12:08:32 [error] [exception.ParseError] ParseError: syntax error, unexpected ',', expecting ']' in /var/www/html/gotedarik/protected/controllers/ProductsController.php:604
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(276): CWebApplication->createController('searchgroups/')
+#1 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('products/search...')
+#2 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#4 {main}
+REQUEST_URI=/gotedarik/products/searchgroups?term=se
+HTTP_REFERER=http://localhost/gotedarik/products/newproduct
+---
+2017/01/29 12:13:17 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "salestype" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('salestype')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('salestype')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('products/salest...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/products/salestype
+HTTP_REFERER=http://localhost/gotedarik/products/newproduct
+---
+2017/01/29 12:14:56 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "salestype" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('salestype')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('salestype')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('products/salest...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/products/salestype
+HTTP_REFERER=http://localhost/gotedarik/products/newproduct
+---
+2017/01/29 12:16:11 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "pproductinformations" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('pproductinforma...')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('pproductinforma...')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('products/pprodu...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/products/pproductinformations
+HTTP_REFERER=http://localhost/gotedarik/products/newproduct
+---
+2017/01/29 12:16:34 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "salestype" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('salestype')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('salestype')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('products/salest...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/products/salestype
+HTTP_REFERER=http://localhost/gotedarik/products/productinformations
+---
+2017/01/29 12:43:12 [error] [exception.CHttpException.404] CHttpException: "front/css/org.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/org.c...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/org.css
+HTTP_REFERER=http://localhost/gotedarik/products/productinformations
+---
+2017/01/29 12:43:12 [error] [exception.CHttpException.404] CHttpException: "front/css/org.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/org.c...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/org.css
+HTTP_REFERER=http://localhost/gotedarik/products/productinformations
+---

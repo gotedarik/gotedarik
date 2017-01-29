@@ -43,6 +43,8 @@ if (!empty(Yii::app()->user->getState("user_id"))){
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/front/js/jquery.maskMoney.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/system/org.css" />
+
     <?php Yii::app()->clientScript->registerCoreScript('jquery');?>
     <?php Yii::app()->clientScript->registerCoreScript('jquery.ui');?>
 
