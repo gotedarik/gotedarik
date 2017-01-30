@@ -32,7 +32,7 @@
 
 
                 <nav class="navigation pagination">
-                    <h2 class="screen-reader-text">Posts navigation</h2>
+                    
                     <div class="nav-links">
                         <?php
 

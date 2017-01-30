@@ -3,11 +3,6 @@
 class Queue1m1Controller extends Controller
 {
 	
-	public function actionHomeproductbid()
-	{
-		Products_Que::homeProductBid();
-	}
-
 
 	public function actionOpportunityproducts()
 	{

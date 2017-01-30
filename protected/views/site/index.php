@@ -746,6 +746,19 @@
 
 									<li class="product">
 										<div class="product-container">
+
+											<?php if(!empty($value->discount)):?>
+												<div class="discount-container pull-right">
+													<div class="green_color">
+														<div class="discount-detail ">
+															<span class="percentage">%</span>
+															<span class="rate"><?=$value->discount?></span>
+															<span class="indirim">İndirim</span>
+														</div>
+													</div>
+												</div>
+											<?php endif?>
+
 											<div class="product-left">
 												<div class="product-thumb">
 													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
@@ -927,6 +940,19 @@
 
 									<li class="product">
 										<div class="product-container">
+
+											<?php if(!empty($value->discount)):?>
+												<div class="discount-container pull-right">
+													<div class="green_color">
+														<div class="discount-detail ">
+															<span class="percentage">%</span>
+															<span class="rate"><?=$value->discount?></span>
+															<span class="indirim">İndirim</span>
+														</div>
+													</div>
+												</div>
+											<?php endif?>
+
 											<div class="product-left">
 												<div class="product-thumb">
 													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="Product"></a>
@@ -986,15 +1012,20 @@
 
 									<li class="product">
 										<div class="product-container">
-                                            <div class="discount-container pull-right">
-                                                <div class="green_color">
-                                                    <div class="discount-detail ">
-                                                        <span class="percentage">%</span>
-                                                        <span class="rate">25</span>
-                                                        <span class="indirim">İndirim</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
+										   <?php if(!empty($value->discount)):?>
+												<div class="discount-container pull-right">
+													<div class="green_color">
+														<div class="discount-detail ">
+															<span class="percentage">%</span>
+															<span class="rate"><?=$value->discount?></span>
+															<span class="indirim">İndirim</span>
+														</div>
+													</div>
+												</div>
+											<?php endif?>
+
+
 											<div class="product-left">
 												<div class="product-thumb">
 													<a class="product-img" href="<?=Yii::app()->createUrl('urun/view',array("id"=>Func::buildId($value->code,$value->name)))?>"><img src="<?= Yii::app()->params["cdn"].$value->imageS?>" alt="<?=$value->name?>"></a>
@@ -1072,6 +1103,7 @@
 									<ul class="products kt-owl-carousel" data-margin="22" data-loop="true" data-nav="true" data-responsive='{"0":{"items":1},"600":{"items":2},"768":{"items":2},"1200":{"items":3}}'>
 										<li class="product">
 											<div class="product-container">
+
 												<div class="product-left">
 													<div class="product-thumb">
 														<a class="product-img" href="#"><img src="<?=Yii::app()->request->baseUrl;?>/front/data/option3/p29.jpg" alt="Product"></a>

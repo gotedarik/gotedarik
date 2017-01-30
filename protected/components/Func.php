@@ -7,6 +7,24 @@ class Func
 
 	private $sayilar=array('0','1','2','3','4','5','6','7','8','9');
 
+	public static function toUpper($str)
+	{
+		return mb_strtoupper($str,"UTF-8");
+	}
+
+	public static function toLower($str)
+	{
+		return mb_strtolower($str,"UTF-8");
+	}
+
+
+	public static function mb_ucfirst($string)
+	{
+		$strlen = mb_strlen($string, "UTF-8");
+		$firstChar = mb_substr($string, 0, 1, "UTF-8");
+		$then = mb_substr($string, 1, $strlen - 1, "UTF-8");
+		return mb_strtoupper($firstChar, "UTF-8") . $then;
+	}
 
 	public static function logout()
 	{

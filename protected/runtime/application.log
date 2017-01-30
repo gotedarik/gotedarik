@@ -8240,3 +8240,1522 @@ Stack trace:
 #14 {main}
 REQUEST_URI=/gotedarik/products/re
 ---
+2017/01/30 20:46:17 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:18 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:19 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:20 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:20 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:26 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:27 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:27 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:29 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:46:29 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 20:47:20 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:47:20 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:47:20 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:47:21 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:47:21 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:47:21 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:14 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:14 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:14 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:14 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:14 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:14 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:38 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:38 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:38 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:38 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:38 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 20:48:38 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/sirket/dokuman/125012-serefoglu-holding
+---
+2017/01/30 21:14:21 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:21 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:21 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:22 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:45 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:45 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:45 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:45 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:45 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:14:45 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:33 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:33 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:56 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:56 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:56 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:56 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:56 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:16:56 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:10 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:10 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:23 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:23 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:23 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:23 [error] [exception.CHttpException.404] CHttpException: "front/css/thumbnail-gallery.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/thumb...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/thumbnail-gallery.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:23 [error] [exception.CHttpException.404] CHttpException: "front/css/colorbox.css" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/css/color...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/css/colorbox.css
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:17:23 [error] [exception.CHttpException.404] CHttpException: "front/js/jquery.colorbox.js" isteği çözümlenemedi. in /var/www/html/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('front/js/jquery...')
+#1 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/gotedarik/front/js/jquery.colorbox.js
+HTTP_REFERER=http://localhost/gotedarik/member/suppliercompanydocuments
+---
+2017/01/30 21:23:30 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('blog.html')
+#1 [internal function]: UrunController->actionView('blog.html')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/blog.html
+HTTP_REFERER=http://localhost/gotedarik/urun/takiplistesi
+---
+2017/01/30 21:35:29 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\ConnectionTimeoutException: No suitable servers found (`serverselectiontryonce` set): [Failed connecting to 'localhost:27017': Connection refused] in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php:228
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(228): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(770): MongoDB\Collection->count(Object(MongoDB\Model\BSONDocument), Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProducts.php(193): MongoCollection->count(Array)
+#3 /var/www/html/gotedarik/protected/controllers/UrunController.php(235): MoProducts->update('1', Array)
+#4 [internal function]: UrunController->actionView('623905')
+#5 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#6 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: No suitable servers found (`serverselectiontryonce` set): [Failed connecting to 'localhost:27017': Connection refused] in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:76
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(772): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\ConnectionTimeoutException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProducts.php(193): MongoCollection->count(Array)
+#2 /var/www/html/gotedarik/protected/controllers/UrunController.php(235): MoProducts->update('1', Array)
+#3 [internal function]: UrunController->actionView('623905')
+#4 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#5 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#6 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#16 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#18 {main}
+REQUEST_URI=/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+HTTP_REFERER=http://localhost/gotedarik/site/index
+---
+2017/01/30 21:35:38 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\ConnectionTimeoutException: No suitable servers found (`serverselectiontryonce` set): [Failed connecting to 'localhost:27017': Connection refused] in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php:228
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(228): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(770): MongoDB\Collection->count(Object(MongoDB\Model\BSONDocument), Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProducts.php(193): MongoCollection->count(Array)
+#3 /var/www/html/gotedarik/protected/controllers/UrunController.php(235): MoProducts->update('1', Array)
+#4 [internal function]: UrunController->actionView('623905')
+#5 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#6 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: No suitable servers found (`serverselectiontryonce` set): [Failed connecting to 'localhost:27017': Connection refused] in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:76
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(772): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\ConnectionTimeoutException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProducts.php(193): MongoCollection->count(Array)
+#2 /var/www/html/gotedarik/protected/controllers/UrunController.php(235): MoProducts->update('1', Array)
+#3 [internal function]: UrunController->actionView('623905')
+#4 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#5 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#6 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#16 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#18 {main}
+REQUEST_URI=/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+HTTP_REFERER=http://localhost/gotedarik/site/index
+---
+2017/01/30 21:35:41 [error] [exception.MongoConnectionException] MongoDB\Driver\Exception\ConnectionTimeoutException: No suitable servers found (`serverselectiontryonce` set): [Failed connecting to 'localhost:27017': Connection refused] in /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php:228
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/mongodb/mongodb/src/Collection.php(228): MongoDB\Driver\Manager->selectServer(Object(MongoDB\Driver\ReadPreference))
+#1 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(770): MongoDB\Collection->count(Object(MongoDB\Model\BSONDocument), Array)
+#2 /var/www/html/gotedarik/protected/mongo/MoProducts.php(193): MongoCollection->count(Array)
+#3 /var/www/html/gotedarik/protected/controllers/UrunController.php(235): MoProducts->update('1', Array)
+#4 [internal function]: UrunController->actionView('623905')
+#5 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#6 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#7 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#16 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#17 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#19 {main}
+
+Next MongoConnectionException: No suitable servers found (`serverselectiontryonce` set): [Failed connecting to 'localhost:27017': Connection refused] in /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Alcaeus/MongoDbAdapter/ExceptionConverter.php:76
+Stack trace:
+#0 /var/www/html/gotedarik/vendor/alcaeus/mongo-php-adapter/lib/Mongo/MongoCollection.php(772): Alcaeus\MongoDbAdapter\ExceptionConverter::toLegacy(Object(MongoDB\Driver\Exception\ConnectionTimeoutException))
+#1 /var/www/html/gotedarik/protected/mongo/MoProducts.php(193): MongoCollection->count(Array)
+#2 /var/www/html/gotedarik/protected/controllers/UrunController.php(235): MoProducts->update('1', Array)
+#3 [internal function]: UrunController->actionView('623905')
+#4 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#5 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#6 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#16 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#18 {main}
+REQUEST_URI=/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+HTTP_REFERER=http://localhost/gotedarik/site/index
+---
+2017/01/30 21:37:18 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:37:19 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:37:19 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:37:20 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:37:21 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:38:24 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:38:25 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:38:26 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:38:26 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:38:27 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:39:33 [error] [exception.ParseError] ParseError: syntax error, unexpected '<<' (T_SL) in /var/www/html/gotedarik/protected/controllers/MesajlarController.php:52
+Stack trace:
+#0 /var/www/html/framework/web/CWebApplication.php(276): CWebApplication->createController('gelenkutusu/')
+#1 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('mesajlar/gelenk...')
+#2 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#4 {main}
+REQUEST_URI=/gotedarik/mesajlar/gelenkutusu
+HTTP_REFERER=http://localhost/gotedarik/member/uaccount
+---
+2017/01/30 21:52:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 21:54:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 21:56:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 21:58:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 21:58:43 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:58:44 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:58:45 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:58:45 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 21:58:46 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:706
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:00:02 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:02:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:03:22 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:03:23 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:03:23 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:03:24 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:03:24 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:04:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:05:13 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p35.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:05:13 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p39.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:05:14 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p36.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:05:14 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p37.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:05:15 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /var/www/html/gotedarik/protected/controllers/UrunController.php:708
+Stack trace:
+#0 /var/www/html/gotedarik/protected/controllers/UrunController.php(219): UrunController->loadModelCode('data/option1/p3...')
+#1 [internal function]: UrunController->actionView('data/option1/p3...')
+#2 /var/www/html/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UrunController), Array)
+#3 /var/www/html/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UrunController), Object(ReflectionMethod), Array)
+#4 /var/www/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('urun/view')
+#14 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#16 {main}
+REQUEST_URI=/gotedarik/urun/data/option1/p38.jpg
+HTTP_REFERER=http://localhost/gotedarik/urun/623905-slimfit-duz-yelekli-takim-elbise
+---
+2017/01/30 22:06:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:08:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:10:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:12:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:14:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:16:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:18:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:20:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:22:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:24:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---
+2017/01/30 22:26:01 [error] [exception.CHttpException.404] CHttpException: Sistem istek yapılan "homeproductbid" aksiyonunu bulamadı. in /var/www/html/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/framework/web/CController.php(270): CController->missingAction('homeproductbid')
+#1 /var/www/html/framework/web/CWebApplication.php(282): CController->run('homeproductbid')
+#2 /var/www/html/framework/web/CWebApplication.php(141): CWebApplication->runController('queue1m1/homepr...')
+#3 /var/www/html/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/gotedarik/index.php(21): CApplication->run()
+#5 {main}
+REQUEST_URI=/gotedarik/queue1m1/homeproductbid
+---

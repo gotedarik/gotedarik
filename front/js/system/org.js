@@ -443,6 +443,10 @@ function changepassword() {
 				
 				$("#alertpassword").children("strong").html("Şifre başarılı bir şekilde değiştirilmiştir.");
 				$("#alertpassword").show();
+				$("#changepassword_register_oldpassword").val("");
+				$("#changepassword_register_newpassword").val("");
+				$("#changepassword_register_newpassword2").val("");
+
 			}else if(data.sonuc==3){
 
 				$('#changepassword_register_error').html("Basit bir şifre girmeyiniz. Lütfen Yeni şifrenizi değiştiriniz.");

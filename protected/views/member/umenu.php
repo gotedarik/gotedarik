@@ -13,12 +13,7 @@
     <div class="block-inner">
         <div class="block-list-category">
             <ul class="tree-menu">
-                <li>
-                    <a href="#">Durum</a>
-                    <ul style="display: none;">
-                        <li><span></span><a href="<?=Yii::app()->createUrl("products/list");?>">Ürünler</a></li>
-                    </ul>
-                </li>
+               
                 <li>
                     <a href="<?=Yii::app()->createUrl('mesajlar/gelenkutusu')?>">Mesajlar <span class="badge pull-md-right"><?=Func::getumessages();?></a>
                 </li>
@@ -28,9 +23,11 @@
                 <li>
                     <a href="<?=Yii::app()->createUrl('sirket/takipedilensirketler')?>">Takip Ettiğiniz Şirketler <span class="badge pull-md-right"><?=Func::getFollowcompanycount();?></span></a>
                 </li>
+                <!--
                 <li>
                     <a href="<?=Yii::app()->createUrl('urun/ihaleler')?>">İhaleler</a>
                 </li>
+                -->
                 <li>
                     <a href="#">Bilgilerim / Ayarlarım</a>
                     <ul style="display: none;">

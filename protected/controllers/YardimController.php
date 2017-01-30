@@ -42,7 +42,7 @@ class YardimController extends Controller
 	public function actionIndex()
 	{
         Yii::app()->params["site_title"]="Yardım Merkezi - ".Yii::app()->name;
-        Yii::app()->params["site_description"]="Organizetedarik Yardım Merkezi'ne hoşgeldiniz. Başlamak için yan taraftaki kategorilerden birinin üzerine gelip, sizin için uygun olan bir başlık seçip ilerleyin.";
+        Yii::app()->params["site_description"]="GoTedarik Yardım Merkezi'ne hoşgeldiniz. Başlamak için yan taraftaki kategorilerden birinin üzerine gelip, sizin için uygun olan bir başlık seçip ilerleyin.";
         Yii::app()->params["site_keywords"]="alıcı işlemleri, satıcı işlemleri, hesap, üyelik, gittigidiyor, yardım, rapor et, kategoriler, ürün arama, kredi kartı, satıcı, kampanyalar, listeleme, vergi, fatura, turbolist, mağaza, günün fırsatı, şifre, güvenlik, sıfır risk, öneriler";
 
 		$model = HelpAnnouncement::model()->find();
@@ -125,7 +125,7 @@ class YardimController extends Controller
 	{
 
         Yii::app()->params["site_title"]="Müşteri Hizmetlerl - ".Yii::app()->name;
-        Yii::app()->params["site_description"]="Organizetedarik Yardım Merkezi'ne hoşgeldiniz. Başlamak için yan taraftaki kategorilerden birinin üzerine gelip, sizin için uygun olan bir başlık seçip ilerleyin.";
+        Yii::app()->params["site_description"]="GoTedarik Yardım Merkezi'ne hoşgeldiniz. Başlamak için yan taraftaki kategorilerden birinin üzerine gelip, sizin için uygun olan bir başlık seçip ilerleyin.";
         Yii::app()->params["site_keywords"]="alıcı işlemleri, satıcı işlemleri, hesap, üyelik, gittigidiyor, yardım, rapor et, kategoriler, ürün arama, kredi kartı, satıcı, kampanyalar, listeleme, vergi, fatura, turbolist, mağaza, günün fırsatı, şifre, güvenlik, sıfır risk, öneriler";
 
 	    if($id != null){

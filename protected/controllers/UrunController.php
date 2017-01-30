@@ -218,14 +218,16 @@ class UrunController extends Controller
 
 		$modelProduct = $this->loadModelCode($id);
 
+        $modelProduct->name=Func::mb_ucfirst(Func::toLower($modelProduct->name));
+        
         $keywords=$modelProduct->name;
         $keys=explode(" ",$modelProduct->name);
         foreach($keys as $key=>$value)
         {
             $keywords.=",".$value;
         }
-        Yii::app()->params["site_title"]=$modelProduct->name." ".$modelProduct->subtitle." OrganizeTedarik 'te";
-        Yii::app()->params["site_description"]=$modelProduct->name." ürünlerinde online satış OrganizeTedarik 'te! ".$modelProduct->name." modelleri, ".$modelProduct->name." çeşitleri ve markalarını uygun fiyatları ile tedarik edin.";
+        Yii::app()->params["site_title"]=$modelProduct->name." ".$modelProduct->subtitle." GoTedarik 'te";
+        Yii::app()->params["site_description"]=$modelProduct->name." ürünlerinde online satış GoTedarik 'te! ".$modelProduct->name." modelleri, ".$modelProduct->name." çeşitleri ve markalarını uygun fiyatları ile tedarik edin.";
         Yii::app()->params["site_keywords"].=",".$keywords;
 
         $modelProduct->viewed+=1;
