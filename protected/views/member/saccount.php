@@ -5,7 +5,7 @@
             <?php $this->renderPartial("smenu"); ?>
         </div>
         <div class="col-lg-9 marginn">
-            <div style="padding: 10px 30px;" class="box-border">
+            <div style="padding: 10px 30px;" class="block block-sidebar box-border">
                 Hoşgeldiniz
             </div>
         </div>

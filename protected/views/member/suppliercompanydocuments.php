@@ -22,13 +22,13 @@
                 <?php $this->renderPartial("smenu",array("active"=>"companyinformation")); ?>
             </div>
             <div class="col-lg-9 marginn">
-                <div style="padding: 10px 30px;" class="box-border">
-                    <form enctype="multipart/form-data" action="#" class="checkout woocommerce-checkout" method="post" name="checkout">
+                <div style="padding: 10px 30px;" class="block block-sidebar box-header">
                         <div id="customer_details" class="col2-set">
                             <div class="col-lg-12">
                                 <div class="woocommerce-billing-fields">
 
                                     <h3>Şirket Belgelerinizi Yükleyin</h3>
+                                    <hr>
 
                                     <?php if($iscompany==false):?>
 
@@ -44,11 +44,8 @@
 
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <span style="width: 180px; float: left;" class="col-lg-5 col-sm-5 col-xs-5">
-                                                    <label style=" background: transparent" class="form-control" for="">Şirket belgeniz</label>
-                                                </span>
-                                                <span class="col-lg-7 col-sm-7 col-xs-7">
-                                                   <span style="margin-bottom: 5px; margin-top: 5px; cursor: pointer" class="ubtn ubtn-primary fileup1" data-toggle="tooltip" data-placement="right" title="Logo Yükle"><i class="fa fa-upload"> &nbsp; Belgenizi Yüklemek İçin Tıklayın</i>
+                                                <span class="col-lg-12 col-sm-12 col-xs-12">
+                                                   <span class="ubtn ubtn-primary fileup1" data-toggle="tooltip" data-placement="right" title="Şirket Belgesi Yükle"><i class="fa fa-upload"> &nbsp; Belgenizi Yüklemek İçin Tıklayın</i>
                                                        <input name="upl" id="userCompanyDocumentUpload" type="file" accept="image/*">
                                                    </span><br>
                                                 </span>
@@ -59,7 +56,6 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
                     <div class="row center-block">
                         <div class="col-lg-12 col-sm-12 col-xs-12" id="doccont">
 

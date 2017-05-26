@@ -73,7 +73,7 @@ $this->renderPartial("head");
                                                        
 
                                                          <tr>
-                                                            <td style="position: relative;top: 10px;"><b>Para birimi</b></td><td><?= CHtml::dropDownList('product_currency', $modelProduct->currency, Params::getParams("currency"),array("class" => "select-input"))?></td>
+                                                            <td style="position: relative;top: 10px;"><b>Para birimi</b></td><td><?= CHtml::dropDownList('product_currency', $modelProduct->currency, Params::getParams("currency"),array("class" => "input-text"))?></td>
                                                         </tr>
                                                         <?php if(Yii::app()->user->getState("salestype")!=1):?>
                                                             <tr>
@@ -106,7 +106,7 @@ $this->renderPartial("head");
                                                                  {
                                                                     $arrdiscount[$i]="%".$i;
                                                                  }
-                                                                 echo CHtml::dropDownList('product_discount', $modelProduct->discount, $arrdiscount,array("class" => "select-input")
+                                                                 echo CHtml::dropDownList('product_discount', $modelProduct->discount, $arrdiscount,array("class" => "input-text")
                                                                );
                                                                 ?>
                                                             </td>
@@ -140,93 +140,92 @@ $this->renderPartial("head");
 
                             <?php if($modelProduct->salestype==1):?>
                             <div class="row padding10">
-                                <div class="col-md-12">
+                                <div style="margin-bottom: 20px" class="col-md-12">
 
                                     <div id="order_comments_field" class="form-row form-row">
                                         <i style="color: #00abc5; margin-right: 10px;" class="fa fa-calendar fa-3x"></i><label style="position: relative; top: -10px;">Ürününüz Kaç Gün Satışta Kalsın ?</label>
-                                        <div class="clear"></div>
-                                        <div class="col-lg-12 col-md-12">
-                                            <ul class="calendardays">
-                                         
-
-                                                <li>
-                                                    <button onclick="lastshowday=3" type="button" class="<?=  $modelProduct->lastshowday==3?"active1":""?> btn btn-default btn-radio2">3 <br>  Gün</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=5" type="button" class="<?=  $modelProduct->lastshowday==5?"active1":""?> btn btn-default btn-radio2">5 <br>  Gün</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=7"  type="button" class="<?=  $modelProduct->lastshowday==7?"active1":""?> btn btn-default btn-radio2">7 <br> Gün</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=10"  type="button" class="<?=  $modelProduct->lastshowday==10?"active1":""?> btn btn-default btn-radio2">10 <br>  Gün</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=30"  type="button" class="<?=  $modelProduct->lastshowday==30?"active1":""?> btn btn-default btn-radio2">1 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=60"  type="button" class="<?=  $modelProduct->lastshowday==60?"active1":""?> btn btn-default btn-radio2">2 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=90"  type="button" class="<?=  $modelProduct->lastshowday==90?"active1":""?> btn btn-default btn-radio2"> 3 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-                                                <li>
-                                                    <button onclick="lastshowday=120"  type="button" class="<?=  $modelProduct->lastshowday==120?"active1":""?> btn btn-default btn-radio2">4 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=180"  type="button" class="<?=  $modelProduct->lastshowday==180?"active1":""?> btn btn-default btn-radio2">6 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                 <li>
-                                                    <button onclick="lastshowday=240"  type="button" class="<?=  $modelProduct->lastshowday==240?"active1":""?> btn btn-default btn-radio2">8 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                 <li>
-                                                    <button onclick="lastshowday=300"  type="button" class="<?=  $modelProduct->lastshowday==300?"active1":""?> btn btn-default btn-radio2">10 <br>  Ay</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-
-                                                 <li>
-                                                    <button onclick="lastshowday=360"  type="button" class="<?=  $modelProduct->lastshowday==360?"active1":""?> btn btn-default btn-radio2">1 <br>  Yıl</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=360*2"  type="button" class="<?= $modelProduct->lastshowday==360*2?"active1":""?> btn btn-default btn-radio2">2 <br>  Yıl</button>
-                                                    <input type="checkbox" id="left-item" hidden="hidden">
-                                                </li>
-
-                                                <li>
-                                                    <button onclick="lastshowday=360*3"  type="button" class="<?=  $modelProduct->lastshowday==360*3?"active1":""?> btn btn-default btn-radio2">3 <br>  Yıl</button>
-                                                    <input type="checkbox" checked="checked" id="left-item" hidden="hidden">
-                                                </li>
-
-                                            </ul>
-                                            <div class="clear"></div>
-                                            <p id="product_lastshowday_error" class="error_system"></p>
-                                        </div>
-
                                     </div>
-
                                 </div>
+                                <br>
+                                <div class="col-lg-12 col-md-12">
+                                    <ul class="calendardays">
+
+
+                                        <li>
+                                            <button onclick="lastshowday=3" type="button" class="<?=  $modelProduct->lastshowday==3?"active1":""?> btn btn-default btn-radio2">3 <br>  Gün</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=5" type="button" class="<?=  $modelProduct->lastshowday==5?"active1":""?> btn btn-default btn-radio2">5 <br>  Gün</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=7"  type="button" class="<?=  $modelProduct->lastshowday==7?"active1":""?> btn btn-default btn-radio2">7 <br> Gün</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=10"  type="button" class="<?=  $modelProduct->lastshowday==10?"active1":""?> btn btn-default btn-radio2">10 <br>  Gün</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=30"  type="button" class="<?=  $modelProduct->lastshowday==30?"active1":""?> btn btn-default btn-radio2">1 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=60"  type="button" class="<?=  $modelProduct->lastshowday==60?"active1":""?> btn btn-default btn-radio2">2 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=90"  type="button" class="<?=  $modelProduct->lastshowday==90?"active1":""?> btn btn-default btn-radio2"> 3 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+                                        <li>
+                                            <button onclick="lastshowday=120"  type="button" class="<?=  $modelProduct->lastshowday==120?"active1":""?> btn btn-default btn-radio2">4 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=180"  type="button" class="<?=  $modelProduct->lastshowday==180?"active1":""?> btn btn-default btn-radio2">6 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=240"  type="button" class="<?=  $modelProduct->lastshowday==240?"active1":""?> btn btn-default btn-radio2">8 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=300"  type="button" class="<?=  $modelProduct->lastshowday==300?"active1":""?> btn btn-default btn-radio2">10 <br>  Ay</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+
+                                        <li>
+                                            <button onclick="lastshowday=360"  type="button" class="<?=  $modelProduct->lastshowday==360?"active1":""?> btn btn-default btn-radio2">1 <br>  Yıl</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=360*2"  type="button" class="<?= $modelProduct->lastshowday==360*2?"active1":""?> btn btn-default btn-radio2">2 <br>  Yıl</button>
+                                            <input type="checkbox" id="left-item" hidden="hidden">
+                                        </li>
+
+                                        <li>
+                                            <button onclick="lastshowday=360*3"  type="button" class="<?=  $modelProduct->lastshowday==360*3?"active1":""?> btn btn-default btn-radio2">3 <br>  Yıl</button>
+                                            <input type="checkbox" checked="checked" id="left-item" hidden="hidden">
+                                        </li>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                    <p id="product_lastshowday_error" class="error_system"></p>
+                                </div>
+
                             </div>
                             <?php else:?>
                              <div class="row padding10">
@@ -234,9 +233,10 @@ $this->renderPartial("head");
 
                                     <div id="order_comments_field" class="form-row form-row">
                                         <div class="col-lg-12 col-md-12">
-                                        <i style="color: #00abc5; margin-right: 10px;" class="fa fa-calendar fa-3x"></i><label style="position: relative; top: -10px;">Ürününüz Kaç Gün İhalede Kalsın ?</label>
+                                        <i style="color: #00abc5; margin-right: 10px;" class="fa fa-calendar fa-3x"></i><label>Ürününüz Kaç Gün İhalede Kalsın ?</label>
                                         </div>
-                                        <div class="col-lg-12 col-md-12">
+                                        <div class="clearfix"></div>
+                                        <div style="margin-top: 20px" class="col-lg-12 col-md-12">
                                             <ul class="calendardays">
                                          
 

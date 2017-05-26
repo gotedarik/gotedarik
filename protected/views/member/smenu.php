@@ -5,7 +5,7 @@
     <div class="block-inner">
         <div class="block-list-category">
             <ul class="tree-menu">
-                <li>
+                <li class="plus">
                     <a href="#">Durum</a>
                     <ul style="display: none;">
                         <li><span></span><a href="<?=Yii::app()->createUrl("products/list");?>">Ürünler</a></li>
@@ -15,19 +15,19 @@
                     <a href="<?=Yii::app()->createUrl('products/create')?>">Satış Yap</a>
                 </li>
                 <li>
-                    <a href="<?=Yii::app()->createUrl('mesajlar/gelenkutusu')?>">Mesajlar <span class="badge pull-md-right"><?=Func::getumessages();?></a>
+                    <a href="<?=Yii::app()->createUrl('mesajlar/gelenkutusu')?>">Mesajlar </a><span style="float: right;margin-top: 3px;" class="badge"><?=Func::getumessages();?>
                 </li>
                 <li>
-                    <a href="<?=Yii::app()->createUrl('listem/tekliflerim')?>">Teklifler <span class="badge pull-md-right"><?=Func::nonofferspro();?></span></a>
+                    <a href="<?=Yii::app()->createUrl('listem/tekliflerim')?>">Teklifler </a><span style="float: right;margin-top: 3px;" class="badge"><?=Func::nonofferspro();?></span>
                 </li>
-                <li>
+                <li class="plus">
                     <a href="#">Bilgilerim / Ayarlarım</a>
                     <ul style="display: none;">
                         <li><a href="<?=Yii::app()->createUrl("member/updatesupplier");?>">Bilgileri Düzenle</a></li>
                         <li><span></span><a href="<?=Yii::app()->createUrl("member/changepassword");?>">Şifre Değiştir</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="plus">
                     <a href="#">Şirket Bilgilerim</a>
                     <ul style="display: none;">
                         <li><span></span><a href="<?=Yii::app()->createUrl("supplierscompany/update");?>"> Şirket Bilgisi</a></li>

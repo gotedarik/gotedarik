@@ -38,7 +38,6 @@ if (!empty(Yii::app()->user->getState("user_id"))){
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/option3.css" />
-    <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="<?=Yii::app()->request->baseUrl;?>/front/css/custom2.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/front/js/jquery.maskMoney.js"></script>
@@ -135,6 +134,20 @@ if (!empty(Yii::app()->user->getState("user_id"))){
                                 </div>
                                 <div class="form-group search-input">
                                     <input type="text" placeholder="Ne aramıştınız?">
+                                </div>
+                                <div class="searchsubs block block-order">
+                                    <span class="shead">Ürünler</span>
+                                    <ul class="parts">
+                                        <li><a href="#">asdadasd</a></li>
+                                    </ul>
+                                    <span class="shead">Kategoriler</span>
+                                    <ul class="parts">
+                                        <li><a href="#">sadasda</a></li>
+                                    </ul>
+                                    <span class="shead">Kategoriler</span>
+                                    <ul class="parts">
+                                        <li><a href="#">sadasda</a></li>
+                                    </ul>
                                 </div>
                                 <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
                             </form>

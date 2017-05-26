@@ -5,7 +5,7 @@
                 <?php $this->renderPartial("../member/smenu",array("active"=>"companyinformation")); ?>
             </div>
             <div class="col-lg-9 marginn">
-                <div style="padding: 10px 30px;" class="jumbotron border123">
+                <div style="padding: 10px 30px;" class="block block-sidebar box-header">
                     <form enctype="multipart/form-data" action="#" class="checkout woocommerce-checkout" method="post" name="checkout">
                         <div id="customer_details" class="col2-set">
                             <div class="col-lg-12">
@@ -79,7 +79,7 @@
                                     </p>
                                     <p id="billing_first_name_field" class="form-row form-row  validate-required">
                                          <?php echo $form->labelEx($model,'address',array('class' => 'control-label')); ?>
-                                        <?php echo $form->textArea($model,'address',array('class' => 'input-text')); ?>
+                                        <?php echo $form->textArea($model,'address',array('class' => 'input-text','style' => 'padding:5px')); ?>
                                         <?php echo $form->error($model,'adress',array('class'=>'text-danger')); ?>
                                     </p>
 

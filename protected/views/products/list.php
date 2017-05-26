@@ -11,9 +11,9 @@
     <div class="main-page">
         <h1 class="page-title">Ürünlerim</h1>
         <div class="page-content checkout-page">
-            <div class="box-border">
+            <div class="block block-sidebar box-header">
 
-        <div class="row">
+        <div class="col-md-12">
             <div id="no-more-tables">
                 <?php $this->widget('zii.widgets.grid.CGridView', array(
                     'id'=>'products-grid',

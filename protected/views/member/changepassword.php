@@ -10,8 +10,7 @@
                 ?>
             </div>
             <div class="col-lg-9 marginn">
-                <div style="padding: 10px 30px;" class="box-border">
-                    <form enctype="multipart/form-data" action="#" class="checkout woocommerce-checkout" method="post" name="checkout">
+                <div style="padding: 10px 30px;" class="block block-sidebar box-header">
                         <div id="customer_details" class="col2-set">
                             <div class="col-lg-12">
                                 <div class="woocommerce-billing-fields">
@@ -57,7 +56,6 @@
 
 
                         </div>
-                    </form>
                 </div>
             </div>
         </div>

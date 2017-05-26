@@ -15,7 +15,7 @@
     margin-bottom: 10px;
 }
 .marginn{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .alt{
     margin-top: 15px;
@@ -108,30 +108,7 @@
 .img-box-img{
     opacity: 0.442;
 }
-.fileuproduct{
-    position: relative;
-    top:-60px;
-    left:-5px;
-    height: 60px;
-    width: 60px;
-    outline: none;
-    background: white;
-    cursor: pointer;
-    z-index: 9999;
-    opacity:0;
-}
-.fileuproduct-main{
-    position: absolute;
-    outline: none;
-    background: red;
-    cursor: pointer;
-    z-index: 9999;
-    width: 215px;
-    height: 200px;
-    opacity:0;
-    top: 35px;
-    left: 100px;
-}
+
 /* countdown */
 
 /* indirim */

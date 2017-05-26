@@ -2129,7 +2129,7 @@ a{
 	position: relative;
 	cursor: pointer;
 }
-.block-list-category>ul>li:after{
+.plus:after{
 	height: 13px;
 	width: 13px;
 	content: '';
@@ -2143,14 +2143,14 @@ a{
 	right: 0;
 }
 
-.block-list-category>ul>li:hover:after{
+.plus:hover:after{
 	background: url('../images/plus-square-hover.png') no-repeat;
 }
-.block-list-category>ul>li.active:after{
+.plus.active:after{
 	background: url('../images/minus.png') no-repeat;
 	top: 15px;
 }
-.block-list-category>ul>li.active:hover:after{
+.plus.active:hover:after{
 	background: url('../images/minus-hover.png') no-repeat;
 }
 

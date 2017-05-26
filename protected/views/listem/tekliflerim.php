@@ -12,7 +12,7 @@
         <div class="main-page">
             <h1 class="page-title">Teklif Detayı</h1>
             <div class="page-content checkout-page">
-                <div class="box-border">
+                <div class="block block-sidebar box-border">
 
                     <table class="table table-bordered table-responsive cart_summary">
                         <thead>
